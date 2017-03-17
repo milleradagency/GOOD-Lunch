@@ -1,0 +1,218 @@
+// main: ../main.scss
+
+// ## FORKS - Equal Height Price Blocks w/Flexbox & Sass
+// ## http://codepen.io/grayghostvisuals/pen/gGxfh
+
+// ============================================================
+// $Price Block Variables
+// ============================================================
+
+$viewport-increment: 0.1px;
+$price-block-large: 1024px;
+$collapsed-price-block: $price-block-large - $viewport-increment;
+$price-btn-bg: $black-light;
+$price-btn-color: lighten($price-btn-bg,40%);
+$price-block-color: $white-off;
+
+$priceBlock-Presenting: $accent;
+$priceBlock-Premier: $primary;
+$priceBlock-Legacy: lighten($primary,10%);
+$priceBlock-Champion: lighten($primary,15%);
+$priceBlock-Sustaining: lighten($primary,20%);
+$priceBlock-Supporting: lighten($primary,25%);
+
+
+// ============================================================
+// $Container
+// ============================================================
+
+.price-block--wrapper {
+  margin-bottom: 1rem;
+  @media screen and (min-width: $price-block-large) {
+    display: flex;
+  }
+}
+
+// ============================================================
+// $Price Block
+// ============================================================
+
+.price-block {
+  margin: 0 .25rem;
+  @media (min-width:$collapsed-price-block) {
+    &:first-child { margin-left: 0;}
+    &:last-child { margin-right: 0;}
+  }
+  padding: 0 1rem;
+  font-family: $display;
+  font-weight: 400;
+  font-size: 1rem;
+  color: $price-block-color;
+  transition: 300ms ease-in-out;
+
+  & p, & ul, & li {
+    font-family: $display;
+  }
+
+  @media screen and (max-width: $collapsed-price-block) {
+    position: relative;
+  }
+
+  &#sponsorPresenting {
+    background: $priceBlock-Presenting;
+    border-top: 1px solid lighten($priceBlock-Presenting,15%);
+    border-bottom: 1px solid darken($priceBlock-Presenting,40%);
+    @media screen and (min-width: $price-block-large) {
+      flex: 1;
+    }
+  }
+
+  &#sponsorPremier {
+    background: $priceBlock-Premier;
+    border-top: 1px solid lighten($priceBlock-Premier,15%);
+    border-bottom: 1px solid darken($priceBlock-Premier,40%);
+    @media screen and (min-width: $price-block-large) {
+      flex: 1;
+    }
+  }
+
+  &#sponsorLegacy {
+    background: $priceBlock-Legacy;
+    border-top: 1px solid lighten($priceBlock-Legacy,15%);
+    border-bottom: 1px solid darken($priceBlock-Legacy,40%);
+    @media screen and (min-width: $price-block-large) {
+      flex: 1;
+    }
+  }
+
+  &#sponsorChampion {
+    background: $priceBlock-Champion;
+    border-top: 1px solid lighten($priceBlock-Champion,15%);
+    border-bottom: 1px solid darken($priceBlock-Champion,40%);
+    @media screen and (min-width: $price-block-large) {
+      flex: 1;
+    }
+  }
+
+  &#sponsorSustaining {
+    background: $priceBlock-Sustaining;
+    border-top: 1px solid lighten($priceBlock-Sustaining,15%);
+    border-bottom: 1px solid darken($priceBlock-Sustaining,40%);
+    @media screen and (min-width: $price-block-large) {
+      flex: 1;
+    }
+  }
+
+  &#sponsorSupporting {
+    background: $priceBlock-Supporting;
+    border-top: 1px solid lighten($priceBlock-Supporting,15%);
+    border-bottom: 1px solid darken($priceBlock-Supporting,40%);
+    @media screen and (min-width: $price-block-large) {
+      flex: 1;
+    }
+  }
+}
+
+
+// ============================================================
+// $Price Block Header
+// ============================================================
+
+.price-block__title {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  padding: 1.25rem 0 0;
+  font-size: 1.25em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.price-block__cost {
+  font-family: $headings;
+  font-size: 1.35rem;
+}
+
+
+// ============================================================
+// $Price Block Button
+// ============================================================
+
+.price-block__btn {
+  appearance: none;
+  border: none;
+  margin: 0.625rem 0 0.3125rem;
+  width: 100%;
+  background: $price-btn-bg;
+  color: $price-btn-color;
+  border-top: 1px solid lighten($price-btn-bg,35%);
+  border-bottom: 1px solid darken($price-btn-bg,80%);
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    color: darken($price-btn-color, 25%);
+    background: lighten($price-btn-bg, 50%);
+    border-top: 1px solid lighten($price-btn-bg,75%);
+    border-bottom: 1px solid darken($price-btn-bg,35%);
+  }
+}
+
+
+// ============================================================
+// $Price Block Info
+// ============================================================
+
+.price-block__info {
+  padding: 0 0 1.25rem;
+  @media screen and (max-width: $collapsed-price-block) {
+    height: 0;
+    visibility: hidden;
+  }
+
+  &.opened {
+    @media screen and (max-width: $collapsed-price-block) {
+      height: auto;
+      visibility: visible;
+    }
+  }
+}
+
+
+// ============================================================
+// $Price Block List
+// ============================================================
+.price-block__perks {
+  font-family: $display;
+  font-size: .8rem;
+  margin-bottom: 0;
+  padding-left: 1rem;
+
+  & li {
+    margin-bottom: .5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+// ============================================================
+// $Price Block Trigger
+// ============================================================
+
+.price-block__trigger {
+  @media screen and (max-width: $collapsed-price-block) {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 1.5625em;
+    font-style: normal;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @media screen and (min-width: $price-block-large) {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+<div class="jumbotron jumbotron-fluid" id="homepageSlider">
+  <!-- <div class="container-fluid"> -->
+    <ul>
+    {% for row in cms.homepage.homepage_slider %}
+  <!-- </div> -->
+      <li>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ row.slide_image.url }}" class="homepageSlider_image" />
+      </li>
+      <div class="homepageSlider_info">
+        <li>
+          <h2>{{ row.slider_title }}</h2>
+        </li>
+        <li>
+          <p>{{ row.slide_text }}</p>
+        </li>
+      </div>
+    {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,102 @@
+// main: ../main.scss
+
+#footer {
+  color: $white;
+  background: $primary-alt;
+  padding: 4rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  & h4 {
+    font-family: $headings;
+  }
+
+  & p {
+    font-family: $display;
+  }
+
+  & img {
+    max-width: 90%;
+    padding: 2rem;
+  }
+
+  & a {
+    color: $white;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: $primary-darkest;
+      text-decoration: none;
+    }
+  }
+} // end #footer
+
+#subFooter {
+  display: flex;
+  background: $black-light;
+  padding: 1rem 0 3.65rem;
+
+  & p {
+
+  }
+
+  & ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    & li {
+      font-family: $ui;
+      font-size: .6rem;
+      letter-spacing: .75px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0 .15rem;
+      margin: 0 .15rem;
+    }
+  }
+
+  & a {
+    color: $gray;
+    &:hover, &:focus {
+      color: $white;
+    }
+  }
+} // end #subFooter
+
+.copyright {
+  padding: 2rem 0 0;
+  font-size: .75rem;
+}
+
+@media (min-width: 768px) { // @media min-768
+	#footer {
+    & img {
+      max-width: 400px;
+    }
+	}
+}
+
+@media (min-width: 1024px) { // @media min-1024
+	.div {
+
+	}
+}
+
+@media (min-width: 1200px) { // @media min-1200
+	.div {
+
+	}
+}
+
+@media (min-width: 1440px) { // @media min-1440
+	.div {
+
+	}
+}

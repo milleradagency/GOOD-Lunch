@@ -1,0 +1,142 @@
+{# Simple search form, remove from search index #}
+
+<!-- Mobile Menu -->
+{# <div id="mobileNav" data-search-index="false"> #}
+  {# <div class="container-fluid"> #}
+    <div class="row">
+        <!-- Give Online -->
+        <div class="col" id="mm-Give">
+          <div id="mobileNavFade" class="mobileNavFade op100">
+            <a href="/giveonline" title="Give and Donate Funds Online">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+              <p>Give</p>
+            </a>
+          </div>
+        </div>
+        <!-- Find Employment -->
+        <div class="col" id="mm-Work">
+          <div id="mobileNavFade" class="mobileNavFade op100">
+            <a href="/info/employment" title="Find Employment">
+              <i class="fa fa-briefcase" aria-hidden="true"></i>
+              <p>Work</p>
+            </a>
+          </div>
+        </div>
+        <!-- Donation Centers -->
+        <div class="col" id="mm-Donate">
+          <div id="mobileNavFade" class="mobileNavFade op100">
+            <a href="#" title="Find Donation Centers">
+              <i class="fa fa-truck" aria-hidden="true"></i>
+              <p>Donate</p>
+            </a>
+          </div>
+        </div>
+        <!-- Store Locations -->
+        <div class="col" id="mm-Locations">
+          <div id="mobileNavFade" class="mobileNavFade op100">
+            <a href="#" title="View Store Locations">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <p>Stores</p>
+            </a>
+          </div>
+        </div>
+        <!-- Toggle Main Menu -->
+        <div class="col" id="mm-More">
+          <div class="mm-btn">
+            <a href="#" title="Toggle Main Menu" class="btn-open">
+              {# <i class="fa fa-bars" aria-hidden="true"></i> #}
+              <p>Menu</p>
+            </a>
+          </div>
+        </div>
+    </div>{# /row #}
+  {# </div> /container #}
+</div>{# /mobileNav #}
+
+<!-- Mobile Menu Overlay Nav -->
+{# <div class="overlay stop-scrolling" data-search-index="false" id="overlayWrap"> #}
+	<div class="wrap">
+    {# min-width: 375px search box #}
+    <div class="row" id="overlaySearch">
+      <div class="col">
+        <form class="form-inline my-2 my-lg-0" action="/search-results/" method="get" data-search-index="false">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" name="q" id="tipue_search_input" />
+      </div>
+      <div class="w-100"></div>
+      <div class="col">
+          <button class="btn-outline-success my-2 my-sm-0" type="submit" id="mobileSearchBtn" />Search</button>
+        </form>
+      </div>
+    </div>{# /row #}
+		<ul class="wrap-nav">
+			<li><a href="/donate">Donate</a></li>
+			<li><a href="/shop">Shop</a></li>
+			<li><a href="/give">Give</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/volunteer">Volunteer</a></li>
+      <li><a href="/info">Info</a></li>
+		</ul>
+    <div class="social">
+      <div class="row">
+        <!-- Facebook -->
+        <div class="col">
+    			<a href="{{ cms.socialmedialinks.facebook }}" target="_blank">
+      			<div class="social-icon">
+      				<i class="fa fa-facebook" aria-hidden="true"></i>
+      			</div>
+    			</a>
+        </div>
+        <!-- LinkedIn -->
+        <div class="col">
+          <a href="{{ cms.socialmedialinks.linkedin }}" target="_blank">
+      			<div class="social-icon">
+      				<i class="fa fa-linkedin" aria-hidden="true"></i>
+      			</div>
+    			</a>
+        </div>
+        <!-- YouTube -->
+        <div class="col">
+          <a href="{{ cms.socialmedialinks.youtube }}" target="_blank">
+      			<div class="social-icon">
+      				<i class="fa fa-youtube" aria-hidden="true"></i>
+      			</div>
+    			</a>
+        </div>
+        <!-- Twitter -->
+        <div class="col">
+    			<a href="{{ cms.socialmedialinks.twitter }}" target="_blank">
+      			<div class="social-icon">
+      				<i class="fa fa-twitter" aria-hidden="true"></i>
+      			</div>
+    			</a>
+        </div>
+        <!-- Instagram -->
+        <div class="col">
+          <a href="{{ cms.socialmedialinks.instagram }}" target="_blank">
+      			<div class="social-icon">
+      				<i class="fa fa-instagram" aria-hidden="true"></i>
+      			</div>
+    			</a>
+        </div>
+        <!-- Pinterest -->
+        <div class="col">
+          <a href="{{ cms.socialmedialinks.pinterest }}" target="_blank">
+      			<div class="social-icon">
+      				<i class="fa fa-pinterest" aria-hidden="true"></i>
+      			</div>
+    			</a>
+        </div>
+      </div>{# /row #}
+    </div>{# /social  #}
+    {# min-width: 414px info #}
+    <div class="row" id="overlayInfo">
+      <div class="col">
+        <p>
+          {% block copyright %}
+            {% include "templates/partials/copyright.html" %}
+          {% endblock %}
+        </p>
+      </div>
+    </div>{# /row #}
+	</div>{# /wrap #}
+</div>{# /overlay #}
