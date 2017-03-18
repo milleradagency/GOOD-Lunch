@@ -94,7 +94,8 @@
   }
 
   & section {
-    margin-bottom: 15rem;
+    // margin-bottom: 15rem;
+    padding-top: 1rem;
   }
 
   & .container {
@@ -110,12 +111,16 @@
       }
     }
   } // end p
+
+  & #mainShare {
+    margin-bottom: 20rem;
+  }
 } // end #pageContent
 
 @media (min-width: 768px) {
   #pageContent {
     max-width: 100%;
-    margin: 0 auto 0 300px;
+    margin: 0 auto;
 
     & #lunchHero {
       & .mobile {
