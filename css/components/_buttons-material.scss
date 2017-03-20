@@ -301,3 +301,13 @@ button.btn-floating {
 .btn-block {
   display: block;
 }
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(250,250,250,.35);
+  &:hover, &:focus {
+    color: $black-lightest;
+    background: $white-off;
+    border: 1px solid $white;
+  }
+}

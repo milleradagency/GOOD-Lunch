@@ -5,7 +5,7 @@ $(document).ready(function() {
   }, 1500, function() {
     // Animation complete.
   });
-  $(".hero-nav").animate({
+  $("nav").animate({
     opacity: 1,
   }, 2000, function() {
     // Animation complete.
@@ -16,15 +16,15 @@ $(document).ready(function() {
 
   // fullPage
   // https://github.com/alvarotrigo/fullPage.js/#initialization
-  $('#fullpageIntro').fullpage({
-    // Scrolling
-    setAllowScrolling: false,
-    // Design
-    controlArrows: false
-  });
-    // un-comment to edit main site content
-    $.fn.fullpage.destroy('all');
-    $('#fullpageIntro').remove();
+  // $('#fullpageIntro').fullpage({
+  //   // Scrolling
+  //   setAllowScrolling: false,
+  //   // Design
+  //   controlArrows: false
+  // });
+  //   // un-comment to edit main site content
+  //   $.fn.fullpage.destroy('all');
+  //   $('#fullpageIntro').remove();
 });
 
 // # Neat Parallax Hero Effect
@@ -174,6 +174,9 @@ $(window).on('beforeunload', function() {
 // prevent a#SECTION from being added to URL on click
 // http://stackoverflow.com/questions/20215248/prevent-href-link-from-changing-the-url-hash
 $('.mainShow').click(function(event){
+  event.preventDefault();
+});
+$('.btn').click(function(event){
   event.preventDefault();
 });
 

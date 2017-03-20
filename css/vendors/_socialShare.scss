@@ -1,7 +1,7 @@
 // main: ../main.scss
 
-// ## FORKS - Material VsocialCard
-// ## http://codepen.io/ariona/pen/JYGzBB
+// ## FORKS - Menu 1
+// ## http://codepen.io/virgilpana/pen/NPzodr
 
 $facebook: #3b5998;
 $pinterest: #bd081c;
@@ -9,273 +9,155 @@ $linkedin: #008cc9;
 $linkedin-alt: #8d6cab;
 $twitter: #3cf;
 
-.contact{
-  display: none;
-	position: absolute;
-	top: 30px;
-	left: 50px;
-	z-index: 6;
-	color: rgba(0,0,0,.5);
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size: 12px;
-	font-weight: 700;
-	padding: 5px 15px;
-	border-radius: 20px;
-	background: rgba(0,0,0,.1);
-	line-height: 1;
+// #socialShare {
+//   position: fixed;
+//   bottom: 0;
+//   right: 0;
+//   background: red;
+//   height: 50px;
+//   z-index: 99999999999;
+//   width: 50px;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   padding: .25rem;
+//   margin: .5rem;
+// }
+
+div.screen{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: red;
+  z-index: 9999;
+  border-radius: 50%;
+  margin: .5rem;
+  overflow: hidden;
+}
+
+div.burger {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 	cursor: pointer;
-	text-shadow: 0 1px 0px rgba(255,255,255,.1);
-
-	&-form{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		background: white;
-		z-index: 5;
-		padding: 80px 50px;
-		transform: translate3d(-100%, 0, 0);
-		transition: .3s ease;
-		border-radius: 5px;
-
-		&.active{
-			transform: translate3d(0,0,0);
-		}
-
-		.close{
-			color: rgba(0,0,0,.7);
-			position: absolute;
-			right: 30px;
-			top: 30px;
-		}
+}
+	div.x,
+	div.y,
+	div.z {
+		margin: 3px auto;
+		background: #fff;
+		border-radius:2px;
+    transition: all 200ms ease-out;
 	}
+	div.x, div.y, div.z { height: 3px; width: 26px; }
+	div.y{top: 18px;}
+	div.z{top: 37px;}
+	div.collapse{
+		top: 20px;
+		background:#4a89dc;
+		transition: all 70ms ease-out;
+	}
+
+
+	div.rotate30{
+		transform: rotate(30deg);
+		transition: all 50ms ease-out;
+	}
+	div.rotate150{
+		transform: rotate(150deg);
+		transition: all 50ms ease-out;
+	}
+
+	div.rotate45{
+		transform: rotate(45deg);
+		transition: all 100ms ease-out;
+	}
+	div.rotate135{
+		transform: rotate(135deg);
+		transition: all 100ms ease-out;
+	}
+
+div.navbar{height:73px;background:#385e97;}
+
+div.circle{
+	border-radius: 50%;
+	width: 0px;
+	height: 0px;
+	position:absolute;
+	top: 35px;
+	left: 36px;
+	background:#fff;
+	opacity:1;
+	transition: all 300ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+}
+div.circle.expand{
+	width:1200px;
+	height:1200px;
+	top: -560px;
+	left: -565px;
+	transition: all 400ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+
+}
+div.menu {
+	height: 568px;
+	width: 320px;
+	position: absolute;
+	top: 0px; left: 0px;
+}
+div.menu ul li {
+	list-style: none;
+	position:absolute;
+	top:50px;;
+	left:0;
+	opacity:0;
+	width:320px;
+	text-align:center;
+	font-size:0px;
+	transition: all 70ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
+}
+div.menu ul li a {
+	color:#4a89dc;
+	text-transform:uppercase;
+	text-decoration:none;
+	letter-spacing:3px;
 }
 
-.socialCards{
-	margin: auto;
-	background: #fefefe;
-	border-radius: 5px;
-	overflow: hidden;
-	box-shadow: 0 2px 10px rgba(0,0,0,.1), 3px 5px 20px rgba(0,0,0,.2);
-	width: 100%;
-	min-height: 550px;
-	position: relative;
-	display: flex;
-	align-items: flex-end;
-	padding: 30px;
-
-
-	.socialCard{
-		display: inline-block;
-		margin-right: 20px;
-	}
-
-	.socialCard-toggle{
-		z-index: 4;
-		position: relative;
-		width: 48px;
-		height: 48px;
-		border-radius: 50%;
-		display: block;
-		text-align: center;
-		line-height: 1.8;
-		font-size: 24px;
-		cursor: pointer;
-		border: 2px solid transparent;
-		transition: .3s ease;
-
-		&.active{
-			color: white;
-			border-color: white;
-		}
-	}
-	.socialCard-content{
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		transition: -webkit-clip-path 1s ease;
-		padding: 100px 0 0;
-		overflow: hidden;
-		border-radius: 5px;
-
-		.row{
-			display: table;
-			width: 100%;
-			height: 100%;
-		}
-
-		.col{
-			width: 50%;
-			height: 100%;
-			display: table-cell;
-			transition: .3s ease .3s;
-			transform: translate3d(0,0,0);
-			vertical-align: top;
-
-			h2 {
-				font-weight: 300;
-				font-size: 2.5rem;
-				line-height: 1;
-				margin: 0 0 1rem;
-				strong {
-					font-weight: 700;
-					display: block;
-				}
-			}
-
-			img{
-				max-width:90%;
-				width: 100%;
-			}
-
-			&.left{
-				transform: translate3d(0,0, 0);
-				opacity: 0;
-				padding-left: 50px;
-			}
-			&.right{
-				transform: translate3d(100px,0, 0);
-				opacity: 0;
-				padding-left: 30px;
-			}
-		}
-	}
-	.socialCard.active .col{
-		transform: translate3d(0,0,0);
-		opacity: 1;
-	}
-	#overview{
-		.socialCard-toggle{
-			position: absolute;
-			top: 30px;
-			right: 30px;
-			opacity:1;
-			color: white;
-		}
-		.socialCard-content{
-			background-color: #efefef;
-			-webkit-clip-path: circle(0% at 91.5% 75px);
-		}
-		&.active {
-			.socialCard-toggle{opacity: 0}
-			.socialCard-content{
-				-webkit-clip-path: circle(270% at 91.5% 75px);
-			}
-		}
-
-		.right{
-			background: url(https://pmcdeadline2.files.wordpress.com/2016/07/logo-tv-logo.png) no-repeat center center;
-			background-size: contain;
-      width: 30%;
-		}
-	}
-
-	#dribbble, #behance, #linkedin, #twitter{
-		.socialCard-content{
-			color: white;
-
-			p{
-				color: rgba(255,255,255,.8);
-			}
-		}
-	}
-	#facebook{
-		.socialCard-content{
-			background-color: $facebook;
-			-webkit-clip-path: circle(0% at 76px 88%);
-			clip-path: circle(0% at 50px 88%);
-
-		}
-		&.active .socialCard-content{
-			-webkit-clip-path: circle(270% at 76px 88%);
-			clip-path: circle(270% at 50px 88%);
-		}
-	}
-	#pinterest {
-		.socialCard-content{
-			background-color: $pinterest;
-			-webkit-clip-path: circle(0% at 150px 88%);
-			clip-path: circle(0% at 150px 88%);
-
-		}
-		&.active .socialCard-content{
-			-webkit-clip-path: circle(270% at 150px 88%);
-			clip-path: circle(270% at 150px 88%);
-		}
-	}
-	#linkedin {
-		.socialCard-content{
-			background-color: $linkedin-alt;
-			-webkit-clip-path: circle(0% at 220px 88%);
-			clip-path: circle(0% at 220px 88%);
-
-		}
-		&.active .socialCard-content{
-			-webkit-clip-path: circle(270% at 220px 88%);
-			clip-path: circle(270% at 220px 88%);
-		}
-	}
-	#twitter {
-		.socialCard-content{
-			background-color: $twitter;
-			-webkit-clip-path: circle(0% at 292px 88%);
-			clip-path: circle(0% at 292px 88%);
-
-		}
-		&.active .socialCard-content{
-			-webkit-clip-path: circle(270% at 292px 88%);
-			clip-path: circle(270% at 292px 88%);
-		}
-	}
+div.menu li.animate{
+	font-size:21px;
+	opacity:1;
+	transition: all 150ms cubic-bezier(0.000, 0.995, 0.990, 1.000);
 }
+div.menu li.animate:nth-of-type(1){
+	top:120px;
+	transition-delay: 0.0s;
+}
+div.menu li.animate:nth-of-type(2){
+	top:190px;
+	transition-delay: 0.03s;
 
-form{
-	.control{
-		position: relative;
-		margin-bottom: 10px;
-		padding-top: 20px;
-		label{
-			position: absolute;
-			top: 30px;
-			left: 0;
-			transition: .3s ease;
-			text-transform: uppercase;
-			font-weight: 600;
-			letter-spacing: 2px;
-			font-size: 14px;
-		}
+}
+div.menu li.animate:nth-of-type(3){
+	top:260px;
+	transition-delay: 0.06s;
 
-		&.submit{
-			text-align: right;
-		}
-	}
-	input, textarea{
-		width: 100%;
-		border: none;
-		border-bottom: 1px solid #e3e3e3;
-		outline: none;
-		padding: 10px 0;
+}
+div.menu li.animate:nth-of-type(4){
+	top:330px;
+	transition-delay: 0.09s;
 
-	}
-	.filled label,input:focus + label,textarea:focus +label{
+}
+div.menu li.animate:nth-of-type(5){
+	top:400px;
+	transition-delay: 0.12s;
 
-		top: 0;
-		font-size: 12px;
+}
+div.menu li.animate:nth-of-type(6){
+	top:470px;
+	transition-delay: 0.15s;
 
-	}
-	textarea{
-		height: 100px;
-
-	}
-	input[type="submit"]{
-		width: auto;
-		background-color: #F06292;
-		padding: 10px 40px;
-		color: white;
-		border-radius: 40px;
-	}
 }
