@@ -21,11 +21,11 @@
 - Add max-width: 40vw; to .et-hero-tabs h3 @ 768px
 
 ###### Event Information
-- Replace fill text
+- Replace filler text
 - Add smooth tab transition to Chew on This*
 
 ###### Special Guests
-- Replace fill images & text
+- Replace filler images & text
 
 ###### Sponsorship Opportunities
 - Remove hover state on mobile devices
