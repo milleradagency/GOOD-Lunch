@@ -3,6 +3,9 @@
 
 ###### TODO
 ###### <sub><sup>* Optional</sup></sub>
+- ~~Configure async Google Analytics~~
+- ~~Add analytics code to thelunch.info~~
+- ~~Swap analytics code to goodwilldallas.org~~
 - Browserstack test*
 - Generate [favicons](http://realfavicongenerator.net/) & primary app color
 - Incorporate official logo
@@ -91,3 +94,14 @@
 - Android: Nav jumps when scrolled on mobile*
 - Colored span slider jumps to first position before executing*
 - Colored span disappears in between sections*
+
+---
+
+### Dependencies
+- "autoprefixer": "^6.7.1",
+- "gulp": "^3.9.1",
+- "gulp-autoprefixer": "^3.1.1",
+- "gulp-cssnano": "^2.1.2",
+- "gulp-postcss": "^6.3.0",
+- "gulp-sass": "^3.1.0",
+- "gulp-sourcemaps": "^2.4.1"

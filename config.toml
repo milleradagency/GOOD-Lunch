@@ -1,0 +1,24 @@
+languageCode = "en-us"
+title = "THE LUNCH | Goodwill Dallas"
+baseURL = "/"
+theme = "2017"
+metadataformat = "toml"
+canonifyurls = true
+publishDir = "docs"
+# menus = "main"
+googleAnalytics = "UA-18087961-2"
+
+[params]
+  title = "THE LUNCH 2017"
+  author = "William Pansky"
+  URL = "http://williampansky.com/"
+  description = "Goodwill Industries of Dallas, Inc.’s largest annual fundraising event, THE LUNCH, targets Dallas’ top chief executives and influential community leaders."
+  copyright = "Goodwill Industries of Dallas Inc."
+  legal = "Goodwill Industries of Dallas and Goodwill Industries of Dallas Foundation are not-for-profit, 501(c) (3) organizations."
+  license = "Released under the MIT license."
+
+[blackfriday]
+  smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true

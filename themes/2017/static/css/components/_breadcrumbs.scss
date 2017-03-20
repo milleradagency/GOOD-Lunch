@@ -1,0 +1,43 @@
+// main: ../main.scss
+
+.breadcrumbs {
+  margin-bottom: 2rem;
+  background: $gray-lighter;
+
+  ul {
+    list-style-type: none;
+    padding: .3rem 0 .35rem;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+
+    li {
+      font-size: .65rem;
+      margin-right: .5rem;
+      padding-right: .5rem;
+    }
+  }
+
+  & .fa {
+
+  }
+
+  a {
+    color: $black-light;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
+
+#breadcrumbs-home {
+  display: none;
+}

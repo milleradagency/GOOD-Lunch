@@ -1,0 +1,120 @@
+<main id="pageContent" class="et-main" style="opacity:0;">
+  <!-- <section id="lunchHero">
+    <div class="tint"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1>The Lunch</h1>
+          <span>
+            <img alt="The David B. Miller Family Foundation Logo" src="{{ .Site.BaseURL }}images/logo-davidbmillerfound-white.png" class="mobile" />
+            <img alt="The David B. Miller Family Foundation Logo" src="{{ .Site.BaseURL }}images/logo-davidbmillerfound-horz-white.png" class="desktop" />
+          </span>
+          <h6>
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;9/8/2017
+            &nbsp;
+            <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Omni Dallas
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="et-slide" id="mainEventInformation">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Event Information</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tristique massa. Suspendisse vulputate velit enim, ut volutpat ipsum iaculis vel. Fusce blandit condimentum porta. Mauris consectetur nibh eu justo tincidunt gravida. Nam ante felis, tristique eu erat id, posuere rhoncus sapien. In ligula leo, imperdiet at iaculis a, sodales a odio. Aenean justo quam, facilisis vitae velit vitae, dignissim molestie dolor.
+          </p>
+          {{ partial "ChewOnThis.html" . }}
+          <p>
+            Donec hendrerit nunc a nulla iaculis, vitae ultrices libero porttitor. Nullam pretium placerat ante, quis aliquet tellus semper sit amet. Duis gravida justo et scelerisque fringilla. Etiam convallis lorem a elit tempor, ut scelerisque sapien feugiat. Pellentesque id erat dolor. Nam commodo laoreet diam vel interdum. Donec eleifend orci non purus hendrerit sodales. In aliquam, dolor et euismod eleifend, tellus nisl iaculis orci, varius gravida leo neque non libero. Donec felis erat, sollicitudin vitae maximus vestibulum, luctus sed ligula. Etiam viverra scelerisque ipsum, eu semper augue tincidunt a. Integer interdum ipsum ex, id faucibus ante mattis eu. Morbi malesuada pharetra turpis at maximus. Nunc pretium turpis urna, quis varius neque eleifend auctor. Donec ut lacinia nunc. Morbi sodales leo tellus, id ullamcorper ligula dapibus tempus.
+          </p>
+          <p>
+            For information about next year’s event and how to sponsor, contact Ashleigh Hughes by phone at <a href="#">214-638-2800, x240</a> or by Email at <a href="#">ahughes@goodwilldallas.org</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="et-slide" id="mainFeaturedGuest" style="justify-content: space-between;">
+    <div class="container" style="margin-bottom:1.5rem;">
+      <div class="row">
+        <div class="col">
+          <h2>Special Guests</h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <div class="row" id="mainGuest1" style="align-items: center;">
+            <div class="col-md-8" style="margin-bottom:1rem;">
+              <img src="/images/facebook-default-no-profile-pic.jpg" alt="" class="img-fluid"/>
+            </div>
+            <div class="col">
+              <h4>First Special Guest</h4>
+              <h6><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</em></h6>
+            </div>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="mainGuest2">
+      <div class="row">
+        <div class="col-md-4" style="margin-bottom:1rem;">
+          <img src="/images/facebook-default-no-profile-pic.jpg" alt="" class="img-fluid"/>
+        </div>
+        <div class="col">
+          <h4>Second Special Guest</h4>
+          <h6><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="et-slide" id="mainSponsorOpp">
+    <!-- <div class="container"> -->
+      <!-- <div class="row"> -->
+        <!-- <div class="col"> -->
+          <!-- {{ partial "sponsorOppMobile.html" . }} -->
+          {{ partial "sponsorOppDesktop.html" . }}
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </section>
+  <section class="et-slide" id="mainDonate">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Donate</h2>
+          <p>
+            100% of THE LUNCH proceeds benefit individuals with disabilities and disadvantages, providing them with free job training and placement services.
+          </p>
+          <p>
+            With your support of THE LUNCH, more people in our community are given a starting point, a pathway, an opportunity!
+          </p>
+          {{ partial "donateCode.html" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="et-slide" id="mainShare">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Share This Event</h2>
+          {{ partial "socialShare.html" . }}
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- {{ partial "sidebar.html" . }} -->
+  {{ partial "footer.html" . }}
+</main>

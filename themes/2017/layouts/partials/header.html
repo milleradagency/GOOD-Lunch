@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="noindex,nofollow">
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+	<!-- <link rel="shortcut icon" href="/static/images/favicon.png">
+	<link rel="apple-touch-icon" href="/static/images/touch-icon.png"> -->
+
+	<!-- Modernizr -->
+	<!-- https://modernizr.com/ -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+
+	<!-- FontAwesome -->
+	<script src="https://use.fontawesome.com/d559e6066b.js"></script>
+
+	<!-- Stylesheets -->
+	<!-- ~/themes/YEAR/layouts/partials/stylesheets.html -->
+	{{ partial "stylesheets.html" . }}
+
+	<!-- Google Analytics -->
+	{{ template "_internal/google_analytics_async.html" . }}
+
+	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
+	{{ .Hugo.Generator }}
+</head>
+<body>
+	<nav class="et-hero-tabs" style="opacity:0;">
+		<!-- ~/themes/YEAR/layouts/partials/mobileNav.html -->
+		{{ partial "nav.html" . }}
+	</nav>
+	<!-- <div id="socialShare"> -->
+		<!-- ~/themes/YEAR/layouts/partials/socialShare.html -->
+		{{ partial "socialShare.html" . }}
+	<!-- </div> -->

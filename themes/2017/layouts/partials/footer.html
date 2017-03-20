@@ -1,0 +1,54 @@
+<footer id="footer">
+	<div class="container">
+	  <div class="row">
+			<div class="col">
+				<img src="{{ .Site.BaseURL }}images/goodlogo-invert.svg" alt="" />
+				<p>
+					For over 90 years Goodwill Dallas has been committed to providing job training and employment to those with disabilities and disadvantaging conditions.
+				</p>
+			</div>
+			<div class="w-100"></div>
+	    <div class="col">
+				<p class="copyright">
+					<!-- &copy; {{ .Now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Params.copyright }}</a>  -->
+					&copy; 1923<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> <a href="https://goodwilldallas.org">Goodwill Industries of Dallas, Inc.</a>
+					<br />An American nonprofit 501(c)(3) organization.
+				</p>
+	    </div>
+	  </div>
+	</div>
+</footer>
+<footer id="subFooter">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<ul>
+					<li>
+						<a href="">
+							Privacy Policy
+						</a>
+					</li>
+					<li>&nbsp;&middot;&nbsp;</li>
+					<li>
+						<a href="">
+							Terms of Use
+						</a>
+					</li>
+					<li>&nbsp;&middot;&nbsp;</li>
+					<li>
+						<a href="http://milleradagency.com">
+							Powered by Miller Ad Agency
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<!-- Javascripts -->
+	<!-- ~/themes/YEAR/layouts/partials/scripts.html -->
+	{{ partial "scripts.html" . }}
+
+</body>
+</html>
