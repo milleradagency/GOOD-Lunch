@@ -12,6 +12,9 @@ class StickyNavigation {
 		$('.btn').click(function() {
 			self.onTabClick(event, $(this));
 		});
+		$('.card-link').click(function() {
+			self.onTabClick(event, $(this));
+		});
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
 	}
