@@ -11,7 +11,7 @@
 - Incorporate official logo
 - Display nav on top/bottom depending on iOS/Android*
 - Add List of Sponsors section in accordion-style
-- Configure /docs or /ghpages deployment scheme
+- ~~Configure /docs deployment scheme~~
 - Configure SSL
 - Remove materialize.min.js
 - Convert raw HTML content to Hugo markdown files*
