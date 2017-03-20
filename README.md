@@ -12,7 +12,7 @@
 - Display nav on top/bottom depending on iOS/Android*
 - Add List of Sponsors section in accordion-style
 - ~~Configure /docs deployment scheme~~
-- Configure SSL
+- ~~Configure SSL with [Cloudflare](https://www.cloudflare.com/a/overview/thelunch.info) thanks to [this blog post](https://hackernoon.com/set-up-ssl-on-github-pages-with-custom-domains-for-free-a576bdf51bc#.jll758tvu)~~
 - Remove materialize.min.js
 - Convert raw HTML content to Hugo markdown files*
 - Incorporate Forestry.io for flat-file CMS editing*
@@ -85,6 +85,32 @@
   - http://thelunch.info/javascript/lunch2017.js
   - https://fonts.googleapis.com/css?family=Open+Sa ...
   - https://fonts.googleapis.com/icon?family=Material+Icons
+- Serve the following static resources from a domain that doesn't set cookies:
+  - https://bbox.blackbaudhosting.com/webforms/bbox-min.js
+  - https://bbox.blackbaudhosting.com/webforms/custom/mongo/scripts/easyXDM-min.js
+  - https://bbox.blackbaudhosting.com/webforms/custom/mongo/scripts/json2-min.js
+  - https://bbox.blackbaudhosting.com/webforms/images/ajax_loader_border2.gif
+  - https://bbox.blackbaudhosting.com/webforms/images/bboxhelp.png
+  - https://bbox.blackbaudhosting.com/webforms/images/cards/amex_normal.png
+  - https://bbox.blackbaudhosting.com/webforms/images/cards/discover_normal.png
+  - https://bbox.blackbaudhosting.com/webforms/images/cards/maestro_normal.png
+  - https://bbox.blackbaudhosting.com/webforms/images/cards/mastercard_normal.png
+  - https://thelunch.info/css/main.css
+  - https://thelunch.info/images/Goodwill-worn-out-hands-from-working-hard.jpg
+  - https://thelunch.info/images/facebook-default-no-profile-pic.jpg
+  - https://thelunch.info/images/goodlogo-invert.svg
+  - https://thelunch.info/images/skyline.svg
+  - https://thelunch.info/images/sponOpp-champion.jpg
+  - https://thelunch.info/images/sponOpp-legacy.jpg
+  - https://thelunch.info/images/sponOpp-premier.jpg
+  - https://thelunch.info/images/sponOpp-presenting.jpg
+  - https://thelunch.info/images/sponOpp-supporting.jpg
+  - https://thelunch.info/images/sponOpp-sustaining.jpg
+  - https://thelunch.info/javascript/ResponsiveAccordion.js
+  - https://thelunch.info/javascript/SocialShare.js
+  - https://thelunch.info/javascript/StickyNav.js
+  - https://thelunch.info/javascript/jquery.cardslider.js
+  - https://thelunch.info/javascript/lunch2017.js
 
 ---
 
