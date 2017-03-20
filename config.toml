@@ -1,11 +1,12 @@
 languageCode = "en-us"
 title = "THE LUNCH | Goodwill Dallas"
-baseURL = "/"
+baseURL = "thelunch.info/"
+url = "https://thelunch.info"
+enforce_ssl = "thelunch.info"
 theme = "2017"
 metadataformat = "toml"
 canonifyurls = true
 publishDir = "docs"
-# menus = "main"
 googleAnalytics = "UA-18087961-2"
 
 [params]
