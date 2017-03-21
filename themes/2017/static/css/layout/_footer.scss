@@ -101,7 +101,11 @@
 @media (min-width: 1024px) { // @media min-1024
   #footer {
     margin-top: 0;
-    &:before { bottom: 410px; }
+    &:before {
+      bottom: 175px;
+      width: 70%;
+      margin: 0 auto;
+    }
     & img {
       max-width: 400px;
     }
