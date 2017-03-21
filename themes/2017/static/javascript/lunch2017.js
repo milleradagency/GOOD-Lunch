@@ -189,3 +189,45 @@ $('.btn').click(function(event){
 //
 // $('.price-block__trigger').on('click', priceToggle);
 // $('.price-block__trigger').on('touchstart', priceToggle);
+
+
+
+// http://stackoverflow.com/questions/15056620/jquery-check-if-browser-is-ie
+// ----------------------------------------------------------
+// If you're not in IE (or IE version is less than 5) then:
+//     ie === undefined
+// If you're in IE (>5) then you can determine which version:
+//     ie === 7; // IE7
+// Thus, to detect IE:
+//     if (ie) {}
+// And to detect the version:
+//     ie === 6 // IE6
+//     ie> 7 // IE8, IE9 ...
+//     ie <9 // Anything less than IE9
+// ----------------------------------------------------------
+var ie = (function(){
+    var undef, v = 3, div = document.createElement('div');
+
+    while (
+        div.innerHTML = '<!--[if gt IE '+(++v)+']><i></i><![endif]-->',
+        div.getElementsByTagName('i')[0]
+    );
+
+    return v> 4 ? v : undef;
+}());
+
+function getInternetExplorerVersion()
+// Returns the version of Internet Explorer or a -1
+// (indicating the use of another browser).
+{
+   var rv = -1; // Return value assumes failure.
+
+   if (navigator.appName == 'Microsoft Internet Explorer')
+   {
+       var ua = navigator.userAgent;
+       var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+
+       if (re.exec(ua) != null) rv = parseFloat( RegExp.$1 );
+   }
+   return rv;
+}
