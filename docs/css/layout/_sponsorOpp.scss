@@ -1,7 +1,7 @@
 // main: ../main.scss
 
 #mainSponsorOpp {
-  & .container-fluid {
+  & .container {
     & .row {
       & .col {
         min-width: 100%;
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: 768px) {
-    & .container-fluid {
+    & .container {
       & .row {
         & .col {
           min-width: 33.3%;
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: 1024px) {
-    & .container-fluid > .row {
+    & .container > .row {
       align-items: flex-start;
       & .col {
         min-width: auto;
@@ -55,10 +55,23 @@
           // padding: .5rem 1.25rem;
         }
       }
+      & .card {
+        &:hover, &:focus {
+          box-shadow: $z-depth-5;
+          transform: translate3d(0,-10px,0);
+          // z-index: 999;
+          & .card-img-top {
+            // font-size: 125%;
+            box-shadow: 0 0 200px rgba(0,0,0,0.65) inset;
+            background: $primary-alt;
+            text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+          } // end .card-img-top
+        }
+      }
     }
   }
   @media (min-width: 1200px) {
-    & .container-fluid > .row {
+    & .container > .row {
       & .col {
         & .card-block {
           padding: 1rem;
@@ -72,7 +85,6 @@
     border: none;
     transition: 300ms ease-in-out;
     box-shadow: $z-depth-2;
-      &:hover, &:focus { box-shadow: $z-depth-5; }
 
     & .card-img-top {
       display: flex;
@@ -138,19 +150,6 @@
         background-image: url("/images/sponOpp-supporting.jpg");
       }
     } // end .card-img-top
-
-
-
-    &:hover, &:focus {
-      transform: translate3d(0,-10px,0);
-      // z-index: 999;
-      & .card-img-top {
-        // font-size: 125%;
-        box-shadow: 0 0 200px rgba(0,0,0,0.65) inset;
-        background: $primary-alt;
-        text-shadow: 1px 1px 1px rgba(0,0,0,.8);
-      } // end .card-img-top
-    } // end hover
   } // end .card
 
   & .card-text {
