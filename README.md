@@ -3,19 +3,19 @@
 
 ###### TODO
 ###### <sub><sup>* Optional</sup></sub>
-- ~~Configure async Google Analytics~~
 - ~~Add analytics code to thelunch.info~~
-- ~~Swap analytics code to goodwilldallas.org~~
-- Browserstack test*
-- Generate [favicons](http://realfavicongenerator.net/) & primary app color
-- Incorporate official logo
-- Display nav on top/bottom depending on iOS/Android*
 - Add List of Sponsors section in accordion-style
+- Browserstack test*
 - ~~Configure /docs deployment scheme~~
+- ~~Configure async Google Analytics~~
 - ~~Configure SSL with [Cloudflare](https://www.cloudflare.com/a/overview/thelunch.info) thanks to [this blog post](https://hackernoon.com/set-up-ssl-on-github-pages-with-custom-domains-for-free-a576bdf51bc#.jll758tvu)~~
-- Remove materialize.min.js
 - Convert raw HTML content to Hugo markdown files*
+- Display nav on top/bottom depending on iOS/Android*
+- Generate [favicons](http://realfavicongenerator.net/) & primary app color
 - Incorporate Forestry.io for flat-file CMS editing*
+- Incorporate official logo
+- Remove materialize.min.js
+- ~~Swap analytics code to goodwilldallas.org~~
 
 ###### StickySlider
 - Keep colored span on previous section before transition to next*
@@ -24,19 +24,20 @@
 - Add max-width: 40vw; to .et-hero-tabs h3 @ 768px
 
 ###### Event Information
-- Replace filler text
 - Add smooth tab transition to Chew on This*
+- Replace filler text
 
 ###### Special Guests
 - Replace filler images & text
 
 ###### Sponsorship Opportunities
-- Remove hover state on mobile devices
 - New layout for mobile devices*
+- Remove hover state on mobile devices
 
 ###### Footer
-- Add other skyline levels for parallax effect*
 - Add 2015 & 2016 links
+- Add height: 700px; bottom: 0; to #footer:before @ 1440px
+- Add other skyline levels for parallax effect*
 
 ###### Optimization
 - Combine/minify JavaScript:
@@ -114,16 +115,16 @@
 
 ---
 
-### KNOWN BUGS
+### Known Bugs
 ###### <sub><sup>* Optional</sup></sub>
 ###### StickySlider.js
 - Android: Nav jumps when scrolled on mobile*
-- Colored span slider jumps to first position before executing*
 - Colored span disappears in between sections*
+- Colored span slider jumps to first position before executing*
 
 ---
 
-### Dependencies
+### Gulp Dependencies
 - "autoprefixer": "^6.7.1",
 - "gulp": "^3.9.1",
 - "gulp-autoprefixer": "^3.1.1",
@@ -131,3 +132,23 @@
 - "gulp-postcss": "^6.3.0",
 - "gulp-sass": "^3.1.0",
 - "gulp-sourcemaps": "^2.4.1"
+
+---
+
+### Forks & Sources
+- [Animate.css](https://github.com/daneden/animate.css)
+- [Blackbaud](https://www.blackbaud.com/)
+- [Bootstrap v4a6](https://v4-alpha.getbootstrap.com/)
+- [FontAwesome](fontawesome.io)
+- [Google Web Fonts](https://fonts.google.com/)
+- [Hugo](gohugo.io)
+- [jQuery](jquery.com)
+- [Material Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
+- [Materialize.css](materializecss.com)
+- [Modernizr](https://modernizr.com/)
+- [Prevent automatic browser scroll on refresh](http://stackoverflow.com/questions/7035331/prevent-automatic-browser-scroll-on-refresh/18633915#18633915)
+- [Prevent href=“#” link from changing the URL hash](http://stackoverflow.com/questions/20215248/prevent-href-link-from-changing-the-url-hash)
+- [Responsive CSS Tabs](http://codepen.io/oknoblich/pen/tfjFl)
+- [Responsive overlay menu navigation](http://codepen.io/riogrande/pen/gbXxdx)
+- [Sticky Slider Navigation (Responsive)](http://codepen.io/ettrics/pen/WRbGRN)
+- [Tinted Hero](http://codepen.io/luishj/pen/Exfyh)
