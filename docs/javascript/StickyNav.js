@@ -4,7 +4,7 @@ class StickyNavigation {
 	constructor() {
 		this.currentId = null;
 		this.currentTab = null;
-		this.tabContainerHeight = 10;
+		this.tabContainerHeight = 100; // container "height"
 		let self = this;
 		$('.et-hero-tab').click(function() {
 			self.onTabClick(event, $(this));
@@ -21,7 +21,7 @@ class StickyNavigation {
 
 	onTabClick(event, element) {
 		event.preventDefault();
-		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
+		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 35; // scroll positioning offset
 		$('html, body').animate({ scrollTop: scrollTop }, 600);
 	}
 

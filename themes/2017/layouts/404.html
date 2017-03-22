@@ -1,0 +1,16 @@
+{{ partial "header404.html" . }}
+
+<!-- Partial Sections -->
+<section id="woah404">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 id="{{ .Title }}">{{ .Title }}</h1>
+        <h3>There's nothing here! Go back <a href="{{ .Site.BaseURL }}">home?</a></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ~/themes/YEAR/layouts/partials/main.html -->
+{{ partial "footer.html" . }}

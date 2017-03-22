@@ -66,7 +66,17 @@
     margin-right: 10px;
   }
 
-  & label[for*='1']:before { content: '\f291'; } // Chew on this
+  & label[for*='1']:before {
+    // content: '\f291';
+    // content: url(/images/GOOD-Face-Color.svg);
+    content: "";
+    background-image: url(/images/GOOD-Face-Color.svg);
+    background-size: 10px 13px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+  } // Chew on this
   & label[for*='2']:before { content: '\f05a'; } // Mission services provided
   & label[for*='3']:before { content: '\f007'; } // People served
   & label[for*='4']:before { content: '\f1ec'; } // Estimated earnings
@@ -92,7 +102,7 @@
     display: block;
   }
 
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 768px) {
     & label {
       font-size: 0;
     }
@@ -108,4 +118,12 @@
     }
   }
 
+}
+
+@media (max-width:768px) {
+  .responsiveTabs {
+    & label[for*='1'] {
+      height: 54px;
+    }
+  }
 }

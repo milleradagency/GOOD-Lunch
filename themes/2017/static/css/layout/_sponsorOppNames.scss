@@ -1,0 +1,26 @@
+// main: ../main.scss
+
+#mainSponsorOpp {
+  & .sponsorNames {
+    list-style-type: none;
+    font-size: .8rem;
+    margin-bottom: .25rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  & .collapse {
+    background: $white;
+  }
+}
+
+@media (min-width: 1024px) {
+  #mainSponsorOpp {
+    & .sponsorNames {
+      font-size: 1rem;
+    }
+  }
+}

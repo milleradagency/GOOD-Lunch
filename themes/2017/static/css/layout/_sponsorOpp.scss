@@ -93,9 +93,10 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 150px;
+      height: 50px;
       color: $white;
-      background: $black-light;
+      // background: $black-light;
+      background: $gray-lunch;
       transition: 300ms ease-in-out;
       box-shadow: 0 0 200px rgba(0,0,0,0.35) inset;
       // & span {
@@ -117,38 +118,42 @@
         line-height: 1.25;
       }
 
-      &#sponPresenting {
-        background-image: url("/images/sponOpp-presenting.jpg");
-        background-blend-mode: soft-light;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: 300ms ease-in-out;
-      }
+      @media (min-width:1024px) {
+        height: 150px;
 
-      &#sponPremier {
-        @extend .card-img-top#sponPresenting;
-        background-image: url("/images/sponOpp-premier.jpg");
-      }
+        &#sponPresenting {
+          background-image: url("/images/sponOpp-presenting.jpg");
+          background-blend-mode: soft-light;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: 300ms ease-in-out;
+        }
 
-      &#sponLegacy {
-        @extend #sponPresenting;
-        background-image: url("/images/sponOpp-legacy.jpg");
-      }
+        &#sponPremier {
+          @extend .card-img-top#sponPresenting;
+          background-image: url("/images/sponOpp-premier.jpg");
+        }
 
-      &#sponChampion {
-        @extend #sponPresenting;
-        background-image: url("/images/sponOpp-champion.jpg");
-      }
+        &#sponLegacy {
+          @extend #sponPresenting;
+          background-image: url("/images/sponOpp-legacy.jpg");
+        }
 
-      &#sponSustaining {
-        @extend #sponPresenting;
-        background-image: url("/images/sponOpp-sustaining.jpg");
-      }
+        &#sponChampion {
+          @extend #sponPresenting;
+          background-image: url("/images/sponOpp-champion.jpg");
+        }
 
-      &#sponSupporting {
-        @extend #sponPresenting;
-        background-image: url("/images/sponOpp-supporting.jpg");
-      }
+        &#sponSustaining {
+          @extend #sponPresenting;
+          background-image: url("/images/sponOpp-sustaining.jpg");
+        }
+
+        &#sponSupporting {
+          @extend #sponPresenting;
+          background-image: url("/images/sponOpp-supporting.jpg");
+        }
+      } // end @media 1024
     } // end .card-img-top
   } // end .card
 

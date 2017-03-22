@@ -231,3 +231,16 @@ function getInternetExplorerVersion()
    }
    return rv;
 }
+
+
+// run if iOS ver = 9.x.x
+// http://stackoverflow.com/questions/13280343/how-can-i-detect-specific-ios-version-with-jquery
+if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
+    var btn = $("#heroButtons");
+    var bar = $(".et-hero-tabs-container");
+    btn.remove();
+    bar.css("position", "fixed");
+    bar.css("top", "0");
+    bar.css("height", "50px");
+    bar.css("border-bottom", "1px solid #595959");
+};

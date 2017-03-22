@@ -9,9 +9,7 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-
-	<!-- <link rel="shortcut icon" href="/static/images/favicon.png">
-	<link rel="apple-touch-icon" href="/static/images/touch-icon.png"> -->
+	{{ partial "favicon.html" . }}
 
 	<!-- Modernizr -->
 	<!-- https://modernizr.com/ -->

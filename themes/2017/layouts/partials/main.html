@@ -1,31 +1,22 @@
 <main id="pageContent" class="et-main" style="opacity:0;">
-  <!-- <section id="lunchHero">
-    <div class="tint"></div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col">
-          <h1>The Lunch</h1>
-          <span>
-            <img alt="The David B. Miller Family Foundation Logo" src="{{ .Site.BaseURL }}images/logo-davidbmillerfound-white.png" class="mobile" />
-            <img alt="The David B. Miller Family Foundation Logo" src="{{ .Site.BaseURL }}images/logo-davidbmillerfound-horz-white.png" class="desktop" />
-          </span>
-          <h6>
-            <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;9/8/2017
-            &nbsp;
-            <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Omni Dallas
-          </h6>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <section class="et-slide" id="mainEventInformation">
     <div class="container">
       <div class="row">
         <div class="col">
           <h2>Event Information</h2>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-4">
+          <img src="{{ .Site.BaseURL }}/images/TheLunch-OfficialLogo.svg" alt="Goodwill Industries of Dallas THE LUNCH Logo" style="margin-bottom:1rem;">
+        </div>
+        <div class="col">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tristique massa. Suspendisse vulputate velit enim, ut volutpat ipsum iaculis vel. Fusce blandit condimentum porta. Mauris consectetur nibh eu justo tincidunt gravida. Nam ante felis, tristique eu erat id, posuere rhoncus sapien. In ligula leo, imperdiet at iaculis a, sodales a odio. Aenean justo quam, facilisis vitae velit vitae, dignissim molestie dolor.
           </p>
+        </div>
+        <div class="w-100" style="margin-bottom:1.5rem"></div>
+        <div class="col">
+          <h4>Chew on This</h4>
           {{ partial "ChewOnThis.html" . }}
           <p>
             Donec hendrerit nunc a nulla iaculis, vitae ultrices libero porttitor. Nullam pretium placerat ante, quis aliquet tellus semper sit amet. Duis gravida justo et scelerisque fringilla. Etiam convallis lorem a elit tempor, ut scelerisque sapien feugiat. Pellentesque id erat dolor. Nam commodo laoreet diam vel interdum. Donec eleifend orci non purus hendrerit sodales. In aliquam, dolor et euismod eleifend, tellus nisl iaculis orci, varius gravida leo neque non libero. Donec felis erat, sollicitudin vitae maximus vestibulum, luctus sed ligula. Etiam viverra scelerisque ipsum, eu semper augue tincidunt a. Integer interdum ipsum ex, id faucibus ante mattis eu. Morbi malesuada pharetra turpis at maximus. Nunc pretium turpis urna, quis varius neque eleifend auctor. Donec ut lacinia nunc. Morbi sodales leo tellus, id ullamcorper ligula dapibus tempus.
@@ -80,14 +71,15 @@
     </div>
   </section>
   <section class="et-slide" id="mainSponsorOpp">
-    <!-- <div class="container"> -->
-      <!-- <div class="row"> -->
-        <!-- <div class="col"> -->
-          <!-- {{ partial "sponsorOppMobile.html" . }} -->
-          {{ partial "sponsorOppDesktop.html" . }}
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Sponsors &amp; Sponsorship Opportunities</h2>
+        </div>
+      </div>
+    </div>
+    {{ partial "sponsorOppNames.html" . }}
+    {{ partial "sponsorOppDesktop.html" . }}
   </section>
   <section class="et-slide" id="mainDonate">
     <div class="container">
