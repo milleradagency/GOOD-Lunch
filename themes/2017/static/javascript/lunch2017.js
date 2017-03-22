@@ -2,12 +2,12 @@
 $(document).ready(function() {
   $("main").animate({
     opacity: 1,
-  }, 1500, function() {
+  }, 500, function() {
     // Animation complete.
   });
   $("nav").animate({
     opacity: 1,
-  }, 2000, function() {
+  }, 1000, function() {
     // Animation complete.
   });
 
