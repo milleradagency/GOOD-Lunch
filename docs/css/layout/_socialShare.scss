@@ -24,6 +24,10 @@ $email: #bd081c;
   box-shadow: 0 0 9px rgba(0,0,0,.05);
   // border-top: 1px solid rgba(250,250,250,.15);
   z-index: 9999999999999;
+  cursor: pointer;
+  &:hover, &:focus {
+    background: lighten($facebook, 20%);
+  }
 
   // &.showMe {
   //   transform: translateY(0);
@@ -34,6 +38,9 @@ $email: #bd081c;
     width: 150px;
     border-radius: 0;
     background: $black-light;
+    &:hover, &:focus {
+      background: lighten($black-light, 10%);
+    }
 
     & #mobileNavBars {
       & i {
@@ -231,17 +238,6 @@ $email: #bd081c;
   //   }
   // }
 } // end mobileNav
-
-@media (max-width:320px) {
-  #mobileNav {
-    & #mobileNavLinks {
-      & .mobileRow {
-        padding: .75rem 0;
-        overflow: hidden;
-      }
-    }
-  }
-}
 
 #navFade {
   overflow: hidden;

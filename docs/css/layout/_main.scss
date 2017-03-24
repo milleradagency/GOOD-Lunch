@@ -50,6 +50,11 @@
   // -----------------------------------------
   // ## event info
   & #mainEventInformation {
+    & p.h5 {
+      font-size: 1rem;
+      line-height: 1.5;
+      @media (min-width:768px) { font-size: 1.25rem }
+    }
     & .chewThis {
       list-style-type: none;
       margin-bottom: 2rem;
@@ -71,7 +76,7 @@
 
   @media (max-width: 424px) {
     & #mainEventInformation {
-      
+
     }
   }
 
@@ -85,9 +90,28 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
+    & h4, & h5 {
+      font-family: $display;
+      border-bottom: 1px dotted rgba(0,0,0,.35);
+      padding-bottom: .65rem;
+    }
+
     & h6 {
       font-family: $display;
       line-height: 1.35;
+    }
+
+    & .col-md-4 {
+      text-align: center;
+      @media (min-width:768px) { text-align:inherit; }
+    }
+
+    & img {
+      border: 4px solid white;
+      box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
+      // max-height: 400px;
+      max-width: 100%;
+      margin: 0 auto 1rem;
     }
   }
 

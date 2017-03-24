@@ -12,8 +12,21 @@
     align-items: center;
   }
 
+  & .honoraryChairs > strong {
+    padding-top: 1px;
+    border-top: 1px dashed rgba(0,0,0,.5);
+  }
+
   & .collapse {
     background: $white;
+  }
+
+  & #lunchCommittee {
+    margin-bottom: 1.5rem;
+    & h6 > strong {
+      padding-bottom: 3px;
+      border-bottom: 1px dashed rgba(0,0,0,.5);
+    }
   }
 }
 
@@ -21,6 +34,9 @@
   #mainSponsorOpp {
     & .sponsorNames {
       font-size: 1rem;
+      &.committee {
+        font-size: .7rem;
+      }
     }
   }
 }
