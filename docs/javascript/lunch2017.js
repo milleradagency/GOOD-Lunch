@@ -242,7 +242,7 @@ if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
 var version = detectIE();
 var btn = $("#heroButtons");
 
-if (version === false) {
+if (version === true) {
   btn.remove();
 } else if (version >= 12) {
   btn.remove();
