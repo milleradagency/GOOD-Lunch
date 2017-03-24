@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,7 +80,7 @@ ga('send', 'pageview');
 	<!--[if lt IE 11]>
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	<![endif]-->
-	<nav class="et-hero-tabs" style="opacity:0;">
+	<nav class="et-hero-tabs" style="opacity:0;" itemscope itemtype="http://schema.org/Event">
 		
 		
 
@@ -87,18 +88,31 @@ ga('send', 'pageview');
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1><span>The</span>Lunch</h1>
+      <h1 itemprop="name"><span>The&nbsp;</span>Lunch</h1>
       
       <div id="foundationType">
         <p>
           The David B. Miller Family Foundation
         </p>
       </div>
-      <h3>Goodwill Industries of Dallas, Inc.’s largest annual fundraising event, THE LUNCH, targets Dallas’ top chief executives and influential community leaders.</h3>
+      <h3 itemprop="description">Goodwill Industries of Dallas, Inc.’s largest annual fundraising event, THE LUNCH, targets Dallas’ top chief executives and influential community leaders.</h3>
       <h6>
-        <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;9/8/2017
+        <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
+        <span itemprop="startDate" content="2017-08-09">
+          9/8/2017
+        </span>
         &nbsp;
-        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Omni Dallas
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Omni Dallas</span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <meta itemprop="streetAddress" content="555 S Lamar St">
+            <meta itemprop="addressLocality" content="Dallas">
+            <meta itemprop="addressRegion" content="TX">
+            <meta itemprop="addressCountry" content="US">
+            <meta itemprop="postalCode" content="75202">
+          </span>
+        </span>
       </h6>
     </div>
     <div class="w-100"></div>
@@ -130,24 +144,46 @@ ga('send', 'pageview');
 	</nav>
 	
 		
-		
-<div class="screen" style="display:none;">
-	<div class="circle"></div>
-	<div class="menu">
-		<ul>
-			<li><a href="">About</a></li>
-			<li><a href="">Share</a></li>
-			<li><a href="">Activity</a></li>
-			<li><a href="">Settings</a></li>
-			<li><a href="">Contact</a></li>
-		</ul>
+		<nav id="mobileNav">
+	
+  <div class="container">
+    <div class="row" id="mobileNavBar">
+      <div class="col" id="mobileNavBars">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </div>
+    </div>
 	</div>
-	<div class="burger">
-		<div class="x"></div>
-		<div class="y"></div>
-		<div class="z"></div>
-	</div>
-</div>
+	
+	<div class="container">
+    <div class="row" id="mobileNavLinks">
+      
+      <a href="#" class="facebook">
+        <div class="col">
+          <h6 class="facebook">Share</h6>
+        </div>
+      </a>
+			
+      <a href="#" class="linkedin">
+        <div class="col">
+          <h6 class="linkedin">Post</h6>
+        </div>
+      </a>
+      
+      <a href="#" class="tweet">
+        <div class="col">
+          <h6 class="tweet">Tweet</h6>
+        </div>
+      </a>
+      
+      <a href="#" class="email">
+        <div class="col">
+          <h6 class="email">Email</h6>
+        </div>
+      </a>
+    </div>
+  </div>
+</nav>
+<div id="navFade" class="hidden"></div>
 
 	
 
@@ -236,7 +272,7 @@ ga('send', 'pageview');
     </div>
   </section>
   <section class="et-slide" id="mainFeaturedGuest" style="display: block;">
-    <div class="container" style="margin-bottom:1.5rem;">
+    <div class="container" style="margin-bottom:1.5rem;" itemprop="performer" itemscope itemtype="http://schema.org/Person">
       <div class="row">
         <div class="col">
           <h2>Special Guests</h2>
@@ -245,10 +281,10 @@ ga('send', 'pageview');
         <div class="col">
           <div class="row" id="mainGuest1" style="align-items: center;">
             <div class="col-md-8" style="margin-bottom:1rem;">
-              <img src="https://thelunch.info/images/facebook-default-no-profile-pic.jpg" alt="" class="img-fluid"/>
+              <img src="https://thelunch.info/images/facebook-default-no-profile-pic.jpg" alt="" class="img-fluid">
             </div>
             <div class="col">
-              <h4>First Special Guest</h4>
+              <h4 itemprop="name">First Special Guest</h4>
               <h6><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</em></h6>
             </div>
           </div>
@@ -261,13 +297,13 @@ ga('send', 'pageview');
         </div>
       </div>
     </div>
-    <div class="container" id="mainGuest2">
+    <div class="container" id="mainGuest2" itemprop="performer" itemscope itemtype="http://schema.org/Person">
       <div class="row">
         <div class="col-md-4" style="margin-bottom:1rem;">
           <img src="https://thelunch.info/images/facebook-default-no-profile-pic.jpg" alt="" class="img-fluid"/>
         </div>
         <div class="col">
-          <h4>Second Special Guest</h4>
+          <h4 itemprop="name">Second Special Guest</h4>
           <h6><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</em></h6>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -354,8 +390,8 @@ ga('send', 'pageview');
           <span>Presenting Sponsor</span>
         </div>
         <div class="card-block">
-          <h4 class="card-title">
-            <span><sup>$</sup>250,000</span>
+          <h4 class="card-title" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="price"><sup>$</sup>250,000</span>
           </h4>
           <p class="card-text">Provides 44 adults with a disability 240 hours of paid, on-the-job training.</p>
         </div>
@@ -379,8 +415,8 @@ ga('send', 'pageview');
           <span>Premier Sponsor</span>
         </div>
         <div class="card-block" id="premFix">
-          <h4 class="card-title">
-            <span><sup>$</sup>100,000</span>
+          <h4 class="card-title" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="price"><sup>$</sup>100,000</span>
           </h4>
           <p class="card-text">Supports 16 adults with a disability 240 hours of paid, on-the-job training.</p>
         </div>
@@ -403,8 +439,8 @@ ga('send', 'pageview');
           <span>Legacy Sponsor</span>
         </div>
         <div class="card-block" id="legFix">
-          <h4 class="card-title">
-            <span><sup>$</sup>50,000</span>
+          <h4 class="card-title" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="price"><sup>$</sup>50,000</span>
           </h4>
           <p class="card-text">Provides 7 adults with a disability 240 hours of paid, on-the-job training, and 5 individuals job placement and retention services.</p>
         </div>
@@ -428,8 +464,8 @@ ga('send', 'pageview');
           <span>Champion Sponsor</span>
         </div>
         <div class="card-block">
-          <h4 class="card-title">
-            <span><sup>$</sup>25,000</span>
+          <h4 class="card-title" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="price"><sup>$</sup>25,000</span>
           </h4>
           <p class="card-text">Provides 2 adults with a disability 240 hours of paid, on-the-job training, and 8 individuals with job placement and retention services.</p>
         </div>
@@ -452,8 +488,8 @@ ga('send', 'pageview');
           <span>Sustaining Sponsor</span>
         </div>
         <div class="card-block">
-          <h4 class="card-title">
-            <span><sup>$</sup>10,000</span>
+          <h4 class="card-title" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="price"><sup>$</sup>10,000</span>
           </h4>
           <p class="card-text">Provides an adult with a disability with 240 hours of paid, on-the-job training, 2 individuals with transportation for one year, and 1 individual with Computer Training.</p>
         </div>
@@ -475,8 +511,8 @@ ga('send', 'pageview');
           <span>Supporting Sponsor</span>
         </div>
         <div class="card-block" id="suppFix">
-          <h4 class="card-title">
-            <span><sup>$</sup>5,000</span>
+          <h4 class="card-title" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            <span itemprop="price"><sup>$</sup>5,000</span>
           </h4>
           <p class="card-text">Provides 2 individuals transportation for the year and Computer Applications Training.</p>
         </div>
@@ -498,7 +534,7 @@ ga('send', 'pageview');
     <div class="col">
       <div class="card">
         <div class="card-block" style="padding:2rem;">
-          <h4 class="card-title">THE LUNCH Ticket</h4>
+          <h4 class="card-title" itemprop="offers" itemscope itemtype="http://schema.org/Offer">THE LUNCH Ticket</h4>
           <h6 class="card-subtitle mb-2"><sup>$</sup>500</h6>
           <p class="card-text">Provides 8 at-risk youth with mentoring sessions.</p>
         </div>

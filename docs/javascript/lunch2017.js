@@ -125,31 +125,33 @@ $(document).ready(function() {
 // heroShinker();
 
 // #mobileNav controls
-// $(function() {
-//   // open/close mobile nav
-//   $("#mobileNavBar").on("click", function() {
-//     if ($("#mobileNav").hasClass("showMeMore") == false) {
-//       $("#mobileNav").addClass('showMeMore');
-//       $("body").addClass('noscroll');
-//       $("#mobileNavBars i").toggleClass('fa-bars fa-times');
-//     } else {
-//       $("#mobileNav").removeClass('showMeMore');
-//       $("body").removeClass('noscroll');
-//       $("#mobileNavBars i").toggleClass('fa-times fa-bars');
-//     };
-//   });
-//
-//   // scrollSpy link activates mobile close
-//   $(".mainShow").on("click", function() {
-//     if ($("#mobileNav").hasClass("showMeMore") == true) {
-//       $("#mobileNav").removeClass('showMeMore');
-//       $("body").removeClass('noscroll');
-//       $("#mobileNavBars i").toggleClass('fa-times fa-bars');
-//     } else {
-//       //
-//     };
-//   });
-// });
+$(function() {
+  // open/close mobile nav
+  $("#mobileNavBar").on("click", function() {
+    if ($("#mobileNav").hasClass("showMeMore") == false) {
+      $("#mobileNav").addClass('showMeMore');
+      $("body").addClass('noscroll');
+      $("#mobileNavBars i").toggleClass('fa-share-alt fa-times');
+      $("#navFade").toggleClass('hidden visible');
+    } else {
+      $("#mobileNav").removeClass('showMeMore');
+      $("body").removeClass('noscroll');
+      $("#mobileNavBars i").toggleClass('fa-times fa-share-alt');
+      $("#navFade").toggleClass('visible hidden');
+    };
+  });
+
+  // // change icon and bg on click
+  // $(".mainShow").on("click", function() {
+  //   if ($("#mobileNav").hasClass("showMeMore") == true) {
+  //     $("#mobileNav").removeClass('showMeMore');
+  //     $("body").removeClass('noscroll');
+  //     $("#mobileNavBars i").toggleClass('fa-times fa-bars');
+  //   } else {
+  //     //
+  //   };
+  // });
+});
 
 // http://stackoverflow.com/questions/7035331/prevent-automatic-browser-scroll-on-refresh/18633915#18633915
 $(window).on('beforeunload', function() {

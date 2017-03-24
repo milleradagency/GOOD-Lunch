@@ -62,8 +62,8 @@
           // z-index: 999;
           & .card-img-top {
             // font-size: 125%;
-            box-shadow: 0 0 200px rgba(0,0,0,0.65) inset;
-            background: $primary-alt;
+            // box-shadow: 0 0 200px rgba(0,0,0,0.65) inset;
+            // background: $primary-alt;
             text-shadow: 1px 1px 1px rgba(0,0,0,.8);
           } // end .card-img-top
         }
@@ -95,10 +95,9 @@
       width: 100%;
       height: 50px;
       color: $white;
-      // background: $black-light;
-      background: $gray-lunch;
+      background: $black-light;
       transition: 300ms ease-in-out;
-      box-shadow: 0 0 200px rgba(0,0,0,0.35) inset;
+      // box-shadow: 0 0 200px rgba(0,0,0,0.35) inset;
       // & span {
       //   display: flex;
       //   flex-direction: row;

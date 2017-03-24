@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h1><span>The</span>Lunch</h1>
+      <h1 itemprop="name"><span>The&nbsp;</span>Lunch</h1>
       <!-- <span id="foundationLogo">
         <img alt="The David B. Miller Family Foundation Logo" src="{{ .Site.BaseURL }}images/logo-davidbmillerfound-horz-white.png" />
       </span> -->
@@ -13,11 +13,24 @@
           The David B. Miller Family Foundation
         </p>
       </div>
-      <h3>Goodwill Industries of Dallas, Inc.’s largest annual fundraising event, THE LUNCH, targets Dallas’ top chief executives and influential community leaders.</h3>
+      <h3 itemprop="description">Goodwill Industries of Dallas, Inc.’s largest annual fundraising event, THE LUNCH, targets Dallas’ top chief executives and influential community leaders.</h3>
       <h6>
-        <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;9/8/2017
+        <i class="fa fa-calendar-o" aria-hidden="true"></i>&nbsp;
+        <span itemprop="startDate" content="2017-08-09">
+          9/8/2017
+        </span>
         &nbsp;
-        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Omni Dallas
+        <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+          <span itemprop="name">Omni Dallas</span>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <meta itemprop="streetAddress" content="555 S Lamar St">
+            <meta itemprop="addressLocality" content="Dallas">
+            <meta itemprop="addressRegion" content="TX">
+            <meta itemprop="addressCountry" content="US">
+            <meta itemprop="postalCode" content="75202">
+          </span>
+        </span>
       </h6>
     </div>
     <div class="w-100"></div>

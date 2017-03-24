@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
+	<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,7 +53,7 @@
 	{{ "<!--[if lt IE 11]>" | safeHTML }}
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	{{ "<![endif]-->" | safeHTML }}
-	<nav class="et-hero-tabs" style="opacity:0;">
+	<nav class="et-hero-tabs" style="opacity:0;" itemscope itemtype="http://schema.org/Event">
 		<!-- ~/themes/YEAR/layouts/partials/mobileNav.html -->
 		{{ partial "nav.html" . }}
 	</nav>
