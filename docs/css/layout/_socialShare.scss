@@ -14,24 +14,17 @@ $email: #bd081c;
   right: 0;
   width: 50px;
   border-radius: 20px 0 0 0;
-  // height: 195px;
   overflow: hidden;
   padding: 0;
   z-index: 1;
   background: $facebook;
-  // transform: translateY(100%);
   transition: $ease-fast;
   box-shadow: 0 0 9px rgba(0,0,0,.05);
-  // border-top: 1px solid rgba(250,250,250,.15);
   z-index: 9999999999999;
   cursor: pointer;
   &:hover, &:focus {
     background: lighten($facebook, 20%);
   }
-
-  // &.showMe {
-  //   transform: translateY(0);
-  // }
 
   &.showMeMore {
     bottom: -1px;
@@ -59,7 +52,6 @@ $email: #bd081c;
 
   #mobileNavBar {
     height: 50px;
-    // margin-bottom: 9px;
 
     #mobileNavDetails {
       color: $white-off;
@@ -85,7 +77,6 @@ $email: #bd081c;
   }
 
   #mobileNavLinks {
-    // overflow: scroll;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
     flex-direction: column;
@@ -115,7 +106,6 @@ $email: #bd081c;
 
     & .mobileRow {
       padding: 1.25rem 0;
-      // border-top: 1px solid $accent-light;
       border-bottom: 1px solid rgba(0,0,0,.35);
     }
 
@@ -125,7 +115,6 @@ $email: #bd081c;
 
     & p {
       font-size: .75rem;
-      // text-align: center;
       font-family: $ui;
       margin-bottom: 0;
     }
@@ -228,15 +217,6 @@ $email: #bd081c;
     position: relative;
     left: -4px;
   }
-
-  // & a {
-  //   font-family: $ui;
-  //   color: white;
-  //   opacity: .75;
-  //   &:hover, &:focus {
-  //     opacity: 1;
-  //   }
-  // }
 } // end mobileNav
 
 #navFade {
