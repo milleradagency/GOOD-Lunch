@@ -244,8 +244,6 @@ var btn = $("#heroButtons");
 
 if (version === true) {
   btn.remove();
-} else if (version >= 12) {
-  btn.remove();
 } else {
   // foo
 }
