@@ -5,9 +5,6 @@
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 //
 // # IMPORTS
-// ## https://fonts.google.com/specimen/Montserrat
-// ## https://fonts.google.com/specimen/Domine
-// ## https://fonts.google.com/specimen/Roboto
 //
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -24,10 +21,10 @@
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-$headings: inherit; // headings
-$bodyCopy: inherit; // body copy
+$headings: Open Sans, "Arial", sans-serif; // headings
+$bodyCopy: Open Sans, "Arial", sans-serif; // body copy
 $display: inherit; // display type
-$ui: inherit; // ui type
+$ui: "Verdana", sans-serif; // ui type
 $fancy: Playfair Display, Georgia, "Times New Roman", serif;
 $script: Pinyon Script, cursive;
 

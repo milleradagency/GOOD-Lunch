@@ -76,9 +76,6 @@ class StickyNavigation {
 			width = this.currentTab.css('width');
 			left = this.currentTab.offset().left;
 		}
-		// else {
-		// 	width = $(".et-hero-tab-slider").toggleClass('force-100 flyFree');
-		// }
 		$('.et-hero-tab-slider').css('width', width);
 		$('.et-hero-tab-slider').css('left', left);
 	}

@@ -1,10 +1,41 @@
+<!-- up to date list of meta -->
+<!-- https://gist.github.com/kevinSuttle/1997924 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="X-UA-Compatible" content="IE=11">
+<title>{{ .Title }}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=11">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+{{ .Hugo.Generator }}
+
+<meta name="description" content="{{ .Site.Params.description }}">
+<meta name="keywords" content="the lunch, goodwill, dallas, 2017">
+<meta name='url' content='https://thelunch.info/'>
+<meta name="subject" content="{{ .Site.Params.subject }}">
+<meta name='Classification' content='nonprofit'>
+<meta name='copyright' content='{{ .Site.Params.copyright }}'>
+<meta name='reply-to' content='ahughes@goodwilldallas.org'>
+<meta name='coverage' content='US'>
+<meta name='revised' content='Friday, March 24th, 2017, 8:00 pm'>
+
+<meta name="author" content="{{ .Site.Params.author }}, {{ .Site.Params.authorURL }}">
+<meta name="designer" content="{{ .Site.Params.author }}, {{ .Site.Params.authorURL }}">
+<link rel="author" href="humans.txt" type="text/plain">
 
 <!-- REMOVE for deployment -->
 <!-- Tells robots not to search/follow -->
 <!-- <meta name="robots" content="noindex,nofollow"> -->
 <meta name="robots" content="all,follow">
 <meta name="googlebot" content="index,follow,snippet,archive">
+
+<!-- favicon metas -->
+{{ partial "favicon.html" . }}
+
+<!-- if rss -->
+{{ if .RSSLink -}}
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+{{- end }}
+
+<!-- socials/OGs -->
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}images/TheLunch-OfficialLogo.jpg" />

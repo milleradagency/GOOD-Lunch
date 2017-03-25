@@ -3,10 +3,6 @@
 <head>
 	<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 	{{ partial "meta.html" . }}
-	<title>{{ .Title }}</title>
-	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	{{ partial "favicon.html" . }}
 
 	<!-- Modernizr -->
 	<!-- https://modernizr.com/ -->
@@ -22,38 +18,22 @@
 	<!-- Google Analytics -->
 	{{ template "_internal/google_analytics_async.html" . }}
 
-	{{ if .RSSLink -}}<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">{{- end }}
-	{{ .Hugo.Generator }}
 	{{ "<!--[if lt IE 11]>" | safeHTML }}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 	{{ "<![endif]-->" | safeHTML }}
-	<style>
-	.chromeframe {
-		text-align: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    background: white;
-    height: 100%;
-    width: 100%;
-    padding: 35px;
-    opacity: .85;
-    font-size: 1.5rem;
-	}
-	</style>
+
+	{{ partial "chromeframe.html" . }}
 </head>
 <body>
+
 	{{ "<!--[if lt IE 11]>" | safeHTML }}
 	<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 	{{ "<![endif]-->" | safeHTML }}
+
 	<nav class="et-hero-tabs" style="opacity:0;" itemscope itemtype="http://schema.org/Event">
 		<!-- ~/themes/YEAR/layouts/partials/mobileNav.html -->
 		{{ partial "nav.html" . }}
 	</nav>
-	<!-- <div id="socialShare"> -->
-		<!-- ~/themes/YEAR/layouts/partials/socialShare.html -->
-		{{ partial "socialShare.html" . }}
-	<!-- </div> -->
+
+	<!-- ~/themes/YEAR/layouts/partials/socialShare.html -->
+	{{ partial "socialShare.html" . }}

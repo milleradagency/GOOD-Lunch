@@ -19,7 +19,7 @@
           <h4>Chew on This</h4>
           {{ partial "ChewOnThis.html" . }}
           <p>
-            For information about next year’s event and how to sponsor, contact Ashleigh Hughes by phone at <a href="#">214-638-2800, x240</a> or by Email at <a href="#">ahughes@goodwilldallas.org</a>.
+            For information about next year’s event and how to sponsor, contact Ashleigh Hughes by phone at <a href="tel:2146382800,240">214-638-2800, x240</a> or by Email at <a href="mailto:ahughes@goodwilldallas.org?subject=THE+LUNCH+2017">ahughes@goodwilldallas.org</a>.
           </p>
         </div>
       </div>
@@ -74,7 +74,7 @@
       </div>
     </div>
     {{ partial "sponsorOppNames.html" . }}
-    {{ partial "sponsorOppDesktop.html" . }}
+    {{ partial "sponsorOpp.html" . }}
   </section>
   <section class="et-slide" id="mainDonate">
     <div class="container">
@@ -92,16 +92,5 @@
       </div>
     </div>
   </section>
-  <!-- <section class="et-slide" id="mainShare">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2>Share This Event</h2>
-          {{ partial "socialShare.html" . }}
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- {{ partial "sidebar.html" . }} -->
   {{ partial "footer.html" . }}
 </main>

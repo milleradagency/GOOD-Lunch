@@ -10,4 +10,8 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  & .col {
+    position: relative;
+    bottom: 4rem;
+  }
 }

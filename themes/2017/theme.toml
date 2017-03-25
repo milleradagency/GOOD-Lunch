@@ -17,5 +17,5 @@ min_version = 0.17
 # If porting an existing theme
 [original]
   name = "Vimux"
-  homepage = ""
+  homepage = "https://github.com/vimux/blank/"
   repo = "https://github.com/vimux/blank/"

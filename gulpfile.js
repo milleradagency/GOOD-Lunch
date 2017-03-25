@@ -1,6 +1,7 @@
 // Gulp
 // http://gulpjs.com/
 // npm install gulp
+// npm install --only=dev
 var gulp = require('gulp');
 
 // Sass
@@ -27,17 +28,9 @@ var sourcemaps = require('gulp-sourcemaps');
 // npm install gulp-autoprefixer --save-dev
 var autoprefixer = require('autoprefixer');
 
-
-gulp.task('task-name', function() {
-  // stuffs
-});
-
-gulp.task('hello', function() {
-  console.log('SASSY! Sass, Autoprefixer, & Nano.');
-});
-
 gulp.task('default', function () {
   return gulp.src('themes/2017/static/css/main.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass()) // using gulp-sass
     .pipe(postcss([ autoprefixer() ]))
     .pipe(nano())

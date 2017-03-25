@@ -1,8 +1,6 @@
 languageCode = "en-us"
 title = "THE LUNCH | Goodwill Dallas"
 baseURL = "https://thelunch.info/"
-# url = "https://thelunch.info/"
-# enforce_ssl = "thelunch.info/"
 theme = "2017"
 metadataformat = "toml"
 canonifyurls = true
@@ -11,12 +9,13 @@ googleAnalytics = "UA-18087961-2"
 
 [params]
   title = "THE LUNCH 2017"
-  author = "William Pansky"
-  URL = "http://williampansky.com/"
   description = "Goodwill Industries of Dallas, Inc.’s largest annual fundraising event, THE LUNCH, targets Dallas’ top chief executives and influential community leaders."
+  subject = "Goodwill Dallas' Annual Fundraising event."
   copyright = "Goodwill Industries of Dallas Inc."
   legal = "Goodwill Industries of Dallas and Goodwill Industries of Dallas Foundation are not-for-profit, 501(c) (3) organizations."
   license = "Released under the MIT license."
+  author = "William Pansky"
+  authorURL = "williampansky.com"
 
 [blackfriday]
   smartypants	= true
