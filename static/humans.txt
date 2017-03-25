@@ -2,22 +2,20 @@
   Site Name:   THE LUNCH 2017
   Site URL:    thelunch.info
   Created:     2017/03/19
-  Standards:
-      - Hugo
-      - HTML5
-      - CSS3
-      - JavaScript
-  Components:
-      - Cloudflare
-      - Font Awesome
-      - GitHub Pages
-      - Google Analytics
-      - Google Fonts
-      - Hugo
-      - Modernizr
-      - Nginx
-      - Twitter Bootstrap
-      - jQuery
+  Standards:    - Hugo
+                - HTML5
+                - CSS3
+                - JavaScript
+  Components:   - Cloudflare
+                - Font Awesome
+                - GitHub Pages
+                - Google Analytics
+                - Google Fonts
+                - Hugo
+                - Modernizr
+                - Nginx
+                - Twitter Bootstrap
+                - jQuery
   Software:    Hugo [gohugo.io]
 
 /* AUTHOR */
