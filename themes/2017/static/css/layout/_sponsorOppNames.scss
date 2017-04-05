@@ -1,6 +1,6 @@
 // main: ../main.scss
 
-#mainSponsorOpp {
+#lunchTopNames {
   & .sponsorNames {
     list-style-type: none;
     & li { font-family: $ui; }
@@ -12,11 +12,19 @@
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
+
+    &.committee {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   & .honoraryChairs > strong {
     padding-top: 1px;
-    border-top: 1px dashed rgba(0,0,0,.5);
+    border-top: 1px dotted rgba(0,0,0,.5);
   }
 
   & .collapse {
@@ -27,27 +35,34 @@
     margin-bottom: 1.5rem;
     & h6 > strong {
       padding-bottom: 3px;
-      border-bottom: 1px dashed rgba(0,0,0,.5);
+      border-bottom: 1px dotted rgba(0,0,0,.5);
     }
   }
 }
 
-@media (min-width: 1024px) {
-  #mainSponsorOpp {
+@media (min-width: 768px) {
+  #lunchTopNames {
     & .sponsorNames {
-      font-size: 1rem;
       &.committee {
-        font-size: .65rem;
+        flex-direction: row;
+        & > li {
+          &:after {
+            content: "\00a0\00a0\·\00a0\00a0"
+          }
+          &:last-child:after { content: none; }
+        }
       }
     }
   }
 }
 
-#donorNames {
-  & ul > li {
-    width: 100%;
-    padding: .25rem;
-    background: rgba(0,0,0,.05);
-    &:nth-child(odd) { background: white }
+@media (min-width: 1024px) {
+  #lunchTopNames {
+    & .sponsorNames {
+      font-size: .8rem;
+      &.committee {
+        font-size: .65rem;
+      }
+    }
   }
 }

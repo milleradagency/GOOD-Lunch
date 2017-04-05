@@ -3,20 +3,17 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2>Event Information</h2>
+          <!-- <h2>Event Information</h2> -->
         </div>
         <div class="w-100"></div>
         <div class="col-md-4">
           <img src="{{ .Site.BaseURL }}images/TheLunch-OfficialLogo.jpg" class="img-fluid" alt="Goodwill Industries of Dallas THE LUNCH Logo" style="margin-bottom:1rem;">
         </div>
-        <div class="col">
-          <p class="h5">
-            The event hosts world class speakers across the nation for an afternoon of entertainment while enjoying a discussion about the services rendered by the organization. Proceeds from THE LUNCH promote Goodwill’s Workforce Development Programs, providing a wide-range of assessment, job training and career placement services.
-          </p>
+        <div class="col-md-8" id="lunchTopNames">
+          {{ partial "sponsorOppNames.html" . }}
         </div>
         <div class="w-100" style="margin-bottom:1.5rem"></div>
         <div class="col">
-          <h4>Chew on This</h4>
           {{ partial "ChewOnThis.html" . }}
           <p>
             For information about next year’s event and how to sponsor, contact Ashleigh Hughes by phone at <a href="tel:2146382800,240">214-638-2800, x240</a> or by Email at <a href="mailto:ahughes@goodwilldallas.org?subject=THE+LUNCH+2017">ahughes@goodwilldallas.org</a>.
@@ -38,7 +35,7 @@
               <img src="/images/General-Stanly-McChrystal.jpg" alt="" class="img-fluid">
             </div>
             <div class="col" style="margin-bottom: 2rem;">
-              <h4 itemprop="name">General Stanly McChrystal, USA <small>(Ret.)</small></h4>
+              <h4 itemprop="name">General Stanley McChrystal, USA <small>(Ret.)</small></h4>
               <h6><em>Former Commander of U.S. and International Forces in Afghanistan, Former Chief of Staff of Military Operations in Afghanistan, Former leader of Joint Special Operations Command.</em></h6>
               <p>
                 A one-of-a-kind commander with a remarkable record of achievement, General Stanley McChrystal is widely praised for creating a revolution in warfare that fused intelligence and operations.
@@ -69,11 +66,10 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2>Sponsors &amp; Sponsorship Opportunities</h2>
+          <h2>Sponsorship Opportunities</h2>
         </div>
       </div>
     </div>
-    {{ partial "sponsorOppNames.html" . }}
     {{ partial "sponsorOpp.html" . }}
   </section>
   <section class="et-slide" id="mainDonate">

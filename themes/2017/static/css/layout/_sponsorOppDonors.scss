@@ -1,6 +1,6 @@
 // main: ../main.scss
 
-#lunchTopNames {
+#mainSponsorOpp {
   & .sponsorNames {
     list-style-type: none;
     & li { font-family: $ui; }
@@ -12,14 +12,6 @@
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
-
-    &.committee {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-    }
   }
 
   & .honoraryChairs > strong {
@@ -40,29 +32,22 @@
   }
 }
 
-@media (min-width: 768px) {
-  #lunchTopNames {
+@media (min-width: 1024px) {
+  #mainSponsorOpp {
     & .sponsorNames {
+      font-size: 1rem;
       &.committee {
-        flex-direction: row;
-        & > li {
-          &:after {
-            content: "\00a0\00a0\·\00a0\00a0"
-          }
-          &:last-child:after { content: none; }
-        }
+        font-size: .65rem;
       }
     }
   }
 }
 
-@media (min-width: 1024px) {
-  #lunchTopNames {
-    & .sponsorNames {
-      font-size: .8rem;
-      &.committee {
-        font-size: .65rem;
-      }
-    }
+#donorNames {
+  & ul > li {
+    width: 100%;
+    padding: .25rem;
+    background: rgba(0,0,0,.05);
+    &:nth-child(odd) { background: white }
   }
 }

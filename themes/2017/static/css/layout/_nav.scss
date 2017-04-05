@@ -33,10 +33,8 @@
     // margin: 0;
     // letter-spacing: 1rem;
   }
-  & h3 {
-    font-size: .85rem;
-    // letter-spacing: 0.3rem;
-    opacity: 0.6;
+  & h6 {
+    font-size: .8rem;
   }
 
   background: url("/images/Goodwill-worn-out-hands-from-working-hard.jpg") no-repeat 50% 50%;
@@ -167,14 +165,13 @@
   justify-content: space-around;
   align-items: center;
   flex: 1;
-  color: #000;
-  // letter-spacing: 0.1rem;
   letter-spacing: 1px;
 	transition: all 0.5s ease;
-	font-size: 0.65rem;
+	font-size: 0.6rem;
   line-height: 1.25;
   margin: 0 .25rem;
   padding: 0 .5rem;
+  transition: all 0.5s ease;
   &.et-hero-tab-first {
     margin: 0 .25rem 0 0;
   }
@@ -183,18 +180,12 @@
   }
   & a {
   	text-decoration: none;
-    // flex: 1;
+    transition: all 0.5s ease;
   }
-  // #tabLunch {
-  //   flex: 1.25;
-  //   @media (min-width: 1024px) {
-  //     flex: 1;
-  //   }
-  // }
-  &:hover {
-		color:white;
-    background: rgba(102,177,241,0.8);
-		transition: all 0.5s ease;
+  color: $black-light;
+  &:hover, &:focus {
+    color: $white;
+    background: $accent;
   }
   &:before {
     content: attr(data-text1);
@@ -206,15 +197,38 @@
   bottom: 0;
   width: 0;
   height: 6px;
-  background: #66B1F1;
+  background: $accent;
   transition: left 0.3s ease;
 }
 
+.et-hero-tab {
+  color: $black-light;
+  &:hover, &:focus {
+    color: $white;
+    background: $accent;
+  }
+}
+
+@media (min-width: 425px) {
+  .et-hero-tabs {
+    & h6 {
+      font-size: 1rem;
+    }
+  }
+  .et-hero-tab {
+    font-size: .65rem;
+  }
+}
+
 @media (min-width: 768px) {
+  .et-hero-tabs {
+    & h6 {
+      font-size: 1.25rem;
+    }
+  }
   .et-hero-tab {
 		font-size: 1rem;
 	}
-  .et-hero-tabs h3 { max-width: 50vw; margin: 0 auto 1rem; }
 }
 
 @media (min-width: 1024px) {
@@ -224,6 +238,9 @@
     h1 {
       font-size: 8rem;
       margin-bottom: 2.25rem;
+    }
+    & h3 {
+      font-size: 1.5rem;
     }
     & #foundationType p {
       font-size: 2rem;
