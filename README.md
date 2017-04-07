@@ -35,6 +35,10 @@
 ---
 
 ### Changelog
+##### v1.1.1
+- `<section class="et-slide" id="mainEventInformation">`
+  - Updated the Event Information copy
+
 ##### v1.1.0
 - `.et-hero-tabs`
   - Removed `<h3>`
