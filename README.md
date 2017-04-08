@@ -37,16 +37,17 @@
 ### Changelog
 ##### v1.1.2
 - `<div class="et-hero-tabs-container">`
-  - Closed [#6 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/6) - Android: Nav jumps when scrolled on mobile
-  - Closed [#47 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/47) - Scroll event position jump
+  - Closed [#06 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/6) Android: Nav jumps when scrolled on mobile
+  - Closed [#47 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/47) Scroll event position jump
 - `<section class="et-slide" id="mainEventInformation">`
+  - Temporarily reorganized section (partials `ChewOnThis-Temp.html`) per client while pending finalization of committee names
   - Updated the Event Information copy (again)
   - Changed the colors of the numerical "Chew on This" elements to theme's accent color per client
   - Changed "Email" to "email" per client
 - `<section class="et-slide" id="mainSponsorOpp">`
   - Replaced all photography per client
 - General
-  - Created `inch.json` per the [Inch CI](https://inch-ci.org/help/config_file_yaml) initiative
+  - ~~Created `inch.json` per the [Inch CI](https://inch-ci.org/help/config_file_yaml) initiative~~ (pending)
   - Retrofit v1.0.0 into the changelog
 
 ##### v1.1.1
