@@ -160,6 +160,10 @@
   }
 }
 
+.et-hero-tabs-container--top {
+  -webkit-transform: translateZ(0); // for Android fix
+}
+
 .et-hero-tab {
   display: flex;
   justify-content: space-around;
