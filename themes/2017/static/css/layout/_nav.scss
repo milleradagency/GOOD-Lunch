@@ -157,11 +157,8 @@
     position: fixed;
     top: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateZ(0); // for Android fix
   }
-}
-
-.et-hero-tabs-container--top {
-  -webkit-transform: translateZ(0); // for Android fix
 }
 
 .et-hero-tab {
