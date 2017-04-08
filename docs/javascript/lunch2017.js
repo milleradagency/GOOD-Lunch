@@ -1,4 +1,4 @@
-// document [when website] loads
+// Document [when website] loads
 $(document).ready(function() {
   $("main").animate({
     opacity: 1,
@@ -36,7 +36,7 @@ $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
 
-// prevent a#SECTION from being added to URL on click
+// Prevent a#SECTION from being added to URL on click
 // http://stackoverflow.com/a/20215413
 $('.mainShow').click(function(event){
   event.preventDefault();
@@ -45,7 +45,7 @@ $('.btn').click(function(event){
   event.preventDefault();
 });
 
-// run if iOS ver = 9.x.x
+// Run if iOS ver = 9.x.x
 // http://stackoverflow.com/a/13280432
 if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
     var btn = $("#heroButtons");
@@ -56,3 +56,15 @@ if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
     bar.css("height", "50px");
     bar.css("border-bottom", "1px solid #595959");
 };
+
+// Detect Android and run
+// https://davidwalsh.name/detect-android
+// http://stackoverflow.com/a/18764086
+var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
+var navi = $(".et-hero-tabs-container--top");
+if(isAndroid) {
+	// Do something!
+	navi.css("-webkit-transform", "translateZ(0)");
+	// window.location = 'http://android.davidwalsh.name';
+}

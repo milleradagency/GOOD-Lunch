@@ -13,7 +13,11 @@
   & li {
     margin: 0 auto !important;
     max-width: 100% !important;
-    & span { font-family: $fancy; }
+    & span {
+      font-family: $fancy;
+      font-size: 3.5rem;
+      color: $accent-light;
+    }
     & p {
       margin: 0 auto 1.5rem;
       @media (min-width:1024px) { max-width: 60%; }

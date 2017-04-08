@@ -121,7 +121,7 @@
         height: 150px;
 
         &#sponPresenting {
-          background-image: url("/images/sponOpp-presenting.jpg");
+          background-image: url("/images/spon-presenting.jpg");
           background-blend-mode: soft-light;
           background-repeat: no-repeat;
           background-size: cover;
@@ -130,27 +130,27 @@
 
         &#sponPremier {
           @extend .card-img-top#sponPresenting;
-          background-image: url("/images/sponOpp-premier.jpg");
+          background-image: url("/images/spon-premier.jpg");
         }
 
         &#sponLegacy {
           @extend #sponPresenting;
-          background-image: url("/images/sponOpp-legacy.jpg");
+          background-image: url("/images/spon-legacy.jpg");
         }
 
         &#sponChampion {
           @extend #sponPresenting;
-          background-image: url("/images/sponOpp-champion.jpg");
+          background-image: url("/images/spon-champion.jpg");
         }
 
         &#sponSustaining {
           @extend #sponPresenting;
-          background-image: url("/images/sponOpp-sustaining.jpg");
+          background-image: url("/images/spon-sustaining.jpg");
         }
 
         &#sponSupporting {
           @extend #sponPresenting;
-          background-image: url("/images/sponOpp-supporting.jpg");
+          background-image: url("/images/spon-supporting.jpg");
         }
       } // end @media 1024
     } // end .card-img-top

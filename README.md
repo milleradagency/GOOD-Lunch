@@ -35,6 +35,20 @@
 ---
 
 ### Changelog
+##### v1.1.2
+- `<div class="et-hero-tabs-container">`
+  - Closed :bug: [#6](https://github.com/milleradagency/GOOD-Lunch/issues/6) - Android: Nav jumps when scrolled on mobile
+  - Closed [#47](https://github.com/milleradagency/GOOD-Lunch/issues/47) - Scroll event position jump
+- `<section class="et-slide" id="mainEventInformation">`
+  - Updated the Event Information copy (again)
+  - Changed the colors of the numerical "Chew on This" elements to theme's accent color per client
+  - Changed "Email" to "email" per client
+- `<section class="et-slide" id="mainSponsorOpp">`
+  - Replaced all photography per client
+- General
+  - Created `inch.json` per the [Inch CI](https://inch-ci.org/help/config_file_yaml) initiative
+  - Retrofit v1.0.0 into the changelog
+
 ##### v1.1.1
 - `<section class="et-slide" id="mainEventInformation">`
   - Updated the Event Information copy
@@ -66,3 +80,27 @@
   - Changed all active photography elements per client
 - `<footer id="footer">`
   - Added link to Goodwill logo pointing to goodwilldallas.org
+
+##### v1.0.0
+- Milestone: [Deployment](https://github.com/milleradagency/GOOD-Lunch/milestone/4)
+  - Closed https://github.com/milleradagency/GOOD-Lunch/issues/46 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg) Finalize metas
+  - Closed [#41](https://github.com/milleradagency/GOOD-Lunch/issues/41) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg) Remove `-nofollow` from `header` & `header404`
+  - Closed [#40](https://github.com/milleradagency/GOOD-Lunch/issues/40) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg) Social Share
+  - Closed [#27](https://github.com/milleradagency/GOOD-Lunch/issues/27) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#29](https://github.com/milleradagency/GOOD-Lunch/issues/29) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#42](https://github.com/milleradagency/GOOD-Lunch/issues/42) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#43](https://github.com/milleradagency/GOOD-Lunch/issues/43) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg) ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg) IE11 - `h1 > span` out of position
+  - Closed [#38](https://github.com/milleradagency/GOOD-Lunch/issues/38) ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg) iOS - Hero buttons broken
+  - Closed [#39](https://github.com/milleradagency/GOOD-Lunch/issues/39) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#24](https://github.com/milleradagency/GOOD-Lunch/issues/24) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#25](https://github.com/milleradagency/GOOD-Lunch/issues/25) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#23](https://github.com/milleradagency/GOOD-Lunch/issues/23) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#28](https://github.com/milleradagency/GOOD-Lunch/issues/28) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#15](https://github.com/milleradagency/GOOD-Lunch/issues/15) ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)
+  - Closed [#14](https://github.com/milleradagency/GOOD-Lunch/issues/14) ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)
+  - Closed [#13](https://github.com/milleradagency/GOOD-Lunch/issues/13) ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)
+  - Closed [#11](https://github.com/milleradagency/GOOD-Lunch/issues/11) ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)
+  - Closed [#10](https://github.com/milleradagency/GOOD-Lunch/issues/10) ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)
+  - Closed [#32](https://github.com/milleradagency/GOOD-Lunch/issues/32) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#31](https://github.com/milleradagency/GOOD-Lunch/issues/31) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)
+  - Closed [#30](https://github.com/milleradagency/GOOD-Lunch/issues/30) ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)

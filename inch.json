@@ -1,0 +1,17 @@
+{
+  "files": {
+    "included": [
+      "docs/**/*.js",
+      "docs/**/*.scss",
+      "docs/**/*.css",
+      "docs/**/*.html",
+      "docs/**/*.jpg",
+      "docs/**/*.svg",
+      "docs/**/*.png"
+    ],
+    "excluded": [
+      "static",
+      "themes"
+    ]
+  }
+}
