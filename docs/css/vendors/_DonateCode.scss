@@ -65,7 +65,7 @@
 // FIX: overflow of "total" column
 .BBFormContainer[data-bbox-part-id="b3f4422e-4d5d-49fc-bdf2-d5a0caba03ae"] .BBFormColTotal {
   // width: 0 !important;
-  overflow: scroll;
+  overflow: hidden;
   font-size: .9rem;
 }
 

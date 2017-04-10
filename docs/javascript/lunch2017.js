@@ -12,6 +12,7 @@ $(document).ready(function() {
   });
 });
 
+
 // #mobileNav controls
 $(function() {
   // open/close mobile nav
@@ -30,11 +31,13 @@ $(function() {
   });
 });
 
+
 // Prevent automatic browser scroll on refresh
 // http://stackoverflow.com/a/18633915
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
+
 
 // Prevent a#SECTION from being added to URL on click
 // http://stackoverflow.com/a/20215413
@@ -44,6 +47,32 @@ $('.mainShow').click(function(event){
 $('.btn').click(function(event){
   event.preventDefault();
 });
+
+
+// Detect IE and change if needed
+// https://codepen.io/gapcode/pen/vEJNZN
+function detectIE() {
+  var ua = window.navigator.userAgent;
+
+  // IE 10
+  // ua = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)';
+
+  // IE 11
+  // ua = 'Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko';
+
+  var msie = ua.indexOf('MSIE ');
+  if (msie > 0) {
+    // IE 10 or older => change flex to block to avoid flex-wrap bug
+    $(".card .card-block").css("display", "block");
+  }
+
+  var trident = ua.indexOf('Trident/');
+  if (trident > 0) {
+    // IE 11 => change flex to block to avoid flex-wrap bug
+    $(".card .card-block").css("display", "block");
+  }
+}
+
 
 // Run if iOS ver = 9.x.x
 // http://stackoverflow.com/a/13280432
@@ -56,6 +85,7 @@ if(/(iPhone|iPad|iPod)\sOS\s9/.test(navigator.userAgent)) {
     bar.css("height", "50px");
     bar.css("border-bottom", "1px solid #595959");
 };
+
 
 // Detect Android and run
 // https://davidwalsh.name/detect-android

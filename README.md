@@ -35,14 +35,20 @@
 ---
 
 ### Changelog
+##### v1.1.4
+- `<section class="et-slide" id="mainSponsorOpp">`
+  - Fixed `flex-wrap` ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg) — if IE via [script](https://codepen.io/gapcode/pen/vEJNZN), change `display: flex;` to `display: block;`
+- `.BBFormContainer[data-bbox-part-id=b3f4422e-4d5d-49fc-bdf2-d5a0caba03ae] .BBFormColTotal`
+  - Changed `overflow: scroll;` to `overflow: hidden;`
+
 ##### v1.1.3
 - `<div class="container" id="donorNames" style="width:100%;">`
   - Hidden per client
 
 ##### v1.1.2
 - `<div class="et-hero-tabs-container">`
-  - Closed [#06 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/6) Android: Nav jumps when scrolled on mobile
-  - Closed [#47 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/47) Scroll event position jump
+  - Closed [#06 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/6) Android: Nav jumps when scrolled on mobile
+  - Closed [#47 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/47) Scroll event position jump
 - `<section class="et-slide" id="mainEventInformation">`
   - Temporarily reorganized section (partials `ChewOnThis-Temp.html`) per client while pending finalization of committee names
   - Updated the Event Information copy (again)
@@ -94,18 +100,18 @@
   - Closed [#27 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/27) Event Information
   - Closed [#29 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/29) Special Guests
   - Closed [#42 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/42) Schema - Add into HTML
-  - Closed [#43 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/43) IE11 - `h1 > span` out of position
-  - Closed [#38 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/38) iOS - Hero buttons broken
+  - Closed [#43 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/43) IE11 - `h1 > span` out of position
+  - Closed [#38 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/38) iOS - Hero buttons broken
   - Closed [#39 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/39) 404 customize
   - Closed [#24 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/24) Favicons
   - Closed [#25 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/25) Official logo
   - Closed [#23 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/23) List of Sponsors
   - Closed [#28 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg) ](https://github.com/milleradagency/GOOD-Lunch/issues/28) Footer
-  - Closed [#15 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/15) win7 ie8.0 - hero and sponOpps
-  - Closed [#14 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/14) win7 ie9.0 - hero size
-  - Closed [#13 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/13) win10 edge13.0 - Hero copy & sponOpp
-  - Closed [#11 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/11) win7 ie10.0,11.0 - Header, sticky nav, & sponOpps
-  - Closed [#10 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/10) iOS - Massive white space on right
+  - Closed [#15 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/15) win7 ie8.0 - hero and sponOpps
+  - Closed [#14 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/14) win7 ie9.0 - hero size
+  - Closed [#13 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/13) win10 edge13.0 - Hero copy & sponOpp
+  - Closed [#11 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/11) win7 ie10.0,11.0 - Header, sticky nav, & sponOpps
+  - Closed [#10 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/10) iOS - Massive white space on right
   - Closed [#32 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/32) SSL
   - Closed [#31 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/31) Configure /docs deployment scheme
   - Closed [#30 ![TODO](http://milleradagency.com/uploads/svg/gh-todo.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/30) Add analytics code to thelunch.info
