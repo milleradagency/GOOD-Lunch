@@ -35,6 +35,10 @@
 ---
 
 ### Changelog
+##### v1.1.3
+- `<div class="container" id="donorNames" style="width:100%;">`
+  - Hidden per client
+
 ##### v1.1.2
 - `<div class="et-hero-tabs-container">`
   - Closed [#06 ![TODO](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/6) Android: Nav jumps when scrolled on mobile
