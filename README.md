@@ -37,7 +37,7 @@
 ### Changelog
 ##### v1.1.4
 - `<section class="et-slide" id="mainSponsorOpp">`
-  - Closed [#49! [BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/49) If IE via [script](https://codepen.io/gapcode/pen/vEJNZN), change `display: flex;` to `display: block;`
+  - Closed [#49 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/49) If IE via [script](https://codepen.io/gapcode/pen/vEJNZN), change `display: flex;` to `display: block;`
 - `.BBFormContainer[data-bbox-part-id=b3f4422e-4d5d-49fc-bdf2-d5a0caba03ae] .BBFormColTotal`
   - Changed `overflow: scroll;` to `overflow: hidden;`
 
