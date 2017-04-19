@@ -35,6 +35,16 @@
 ---
 
 ### Changelog
+##### v1.1.6
+- `<div class="container" id="donorNames">`
+  - Added the following to `_sponsorOppDonors.scss` and added the class `noNames` to donation tiers without names
+  - ```scss
+    .noNames {
+      display: none;
+      @media(min-width:1200px) { display: flex; visibility: hidden;}
+    }
+    ```
+
 ##### v1.1.5
 - `<div class="container" id="donorNames">`
   - Added current list of sponsor names per client
