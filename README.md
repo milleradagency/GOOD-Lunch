@@ -35,6 +35,12 @@
 ---
 
 ### Changelog
+##### v1.1.5
+- `<div class="container" id="donorNames">`
+  - Added current list of sponsor names per client
+- `<section class="et-slide" id="mainDonate">`
+  - Added `min-height` values per donation snippet values to help alleviate page jump on load
+
 ##### v1.1.4
 - `<section class="et-slide" id="mainSponsorOpp">`
   - Closed [#49 ![BUG](http://milleradagency.com/uploads/svg/gh-bug.svg)](https://github.com/milleradagency/GOOD-Lunch/issues/49) If IE via [script](https://codepen.io/gapcode/pen/vEJNZN), change `display: flex;` to `display: block;`

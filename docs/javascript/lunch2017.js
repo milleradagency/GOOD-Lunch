@@ -5,11 +5,14 @@ $(document).ready(function() {
   }, 500, function() {
     // Animation complete.
   });
+
   $("nav").animate({
     opacity: 1,
   }, 1000, function() {
     // Animation complete.
   });
+
+  $("#bbox-root").delay(2000).fadeIn("slow");
 });
 
 

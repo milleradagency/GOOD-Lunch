@@ -39,5 +39,5 @@ gulp.task('default', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch('themes/2017/static/css/**.scss', ['default']);
+  gulp.watch('themes/2017/static/css/**/*.scss', ['default']);
 });

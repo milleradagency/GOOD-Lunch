@@ -137,7 +137,19 @@
   & #mainShare {
     margin-bottom: 20rem;
   }
+
+  & #mainDonate {
+    min-height: 2118px;
+    margin: 0;
+  }
 } // end #pageContent
+@media (min-width: 425px) {
+  #pageContent {
+    & #mainDonate {
+      min-height: 1748px;
+    }
+  }
+} // end @media 425
 
 @media (min-width: 768px) {
   #pageContent {
@@ -154,6 +166,10 @@
       width: 900px;
       max-width: 100%;
       margin: 0 auto;
+    }
+
+    & #mainDonate {
+      min-height: 1315px;
     }
   }
 } // end @media 768
@@ -173,6 +189,10 @@
       & h1 {
         font-size: 5rem;
       }
+    }
+
+    & #mainDonate {
+      min-height: 1297px;
     }
   }
 } // end @media 1024
