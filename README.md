@@ -35,6 +35,12 @@
 ---
 
 ### Changelog
+##### v1.1.7
+- `<div class="container" id="donorNames">`
+  - Added additional names to the 'List of Legacy Sponsors'
+  - Removed class `.noNames` from `<!-- legacy sponsors --><div class="col-md-6 col-xl-2">`
+  - Added donor logo to the 'List of Champion Sponsors'
+  - Added additional names to the 'List of Sustaining Sponsors'
 ##### v1.1.6
 - `<div class="container" id="donorNames">`
   - Added the following to `_sponsorOppDonors.scss` and added the class `noNames` to donation tiers without names
