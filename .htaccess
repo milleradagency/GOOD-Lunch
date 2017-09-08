@@ -1,2 +1,0 @@
-RewriteEngine  on
-Redirect 302  "thelunch.info"  "goodwilldallas.org"  [R]
